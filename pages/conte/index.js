@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Conte.module.css'
 import Link from 'next/link'
 
-export default function Home() {
+export default function Conte() {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,18 +13,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <h1 className={styles.title}> Sheila web page</h1>
-        <nav className={styles.nav}>
-          <Link href='/conte'>Conte</Link>
-          <Link href='/ressource'>Resource</Link>
-          <Link href='/moi'>Moi</Link>
-          
+      <nav className={styles.nav}>
+          <Link href='/'>Home</Link>
         </nav>
-
+        <h1 className={styles.title}>Conte</h1>
         
-         
-
-
       </main>
     </div>
   )
