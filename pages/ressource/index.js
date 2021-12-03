@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../styles/Ressource.module.css'
+import styles from 'styles/Ressource.module.css'
 import Link from 'next/link'
 
-export default function Ressource() {
+export default function Ressource () {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +16,7 @@ export default function Ressource() {
           <Link href='/'>Home</Link>
         </nav>
         <h1 className={styles.title}>Conte</h1>
-        
+
       </main>
     </div>
   )

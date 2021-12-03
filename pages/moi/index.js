@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../styles/Moi.module.css'
+import styles from 'styles/Moi.module.css'
 import Link from 'next/link'
 
-export default function Moi() {
+export default function Moi () {
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +17,7 @@ export default function Moi() {
         </nav>
 
         <h1 className={styles.title}>Moi</h1>
-        
+
       </main>
     </div>
   )
