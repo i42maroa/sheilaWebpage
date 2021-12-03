@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from 'styles/Moi.module.css'
-import Link from 'next/link'
+import Navbar from '@c/Navbar'
+import PageLayout from '@c/PageLayout'
 
 export default function Moi () {
   return (
@@ -11,14 +12,12 @@ export default function Moi () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-      <nav className={styles.nav}>
-          <Link href='/'>Home</Link>
-        </nav>
+      <PageLayout>
+      <Navbar></Navbar>
 
         <h1 className={styles.title}>Moi</h1>
 
-      </main>
+        </PageLayout>
     </div>
   )
 }
