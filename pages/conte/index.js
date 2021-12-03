@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from 'styles/Conte.module.css'
-import Link from 'next/link'
+import Navbar from '@c/Navbar'
+import PageLayout from '@c/PageLayout'
 
 export default function Conte () {
   return (
@@ -11,13 +12,10 @@ export default function Conte () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-      <nav className={styles.nav}>
-          <Link href='/'>Home</Link>
-        </nav>
-        <h1 className={styles.title}>Conte</h1>
-
-      </main>
+      <PageLayout>
+        <Navbar></Navbar>
+          <h1 className={styles.title}>Conte</h1>
+      </PageLayout>
     </div>
   )
 }

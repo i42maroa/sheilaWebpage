@@ -1,0 +1,22 @@
+.button{
+    align-items: center;
+    background: var(--secondary);
+    color: #fff;
+    border: 0;
+    border-radius: 9999px;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: opacity .3s ease;
+    display: flex;
+}
+
+
+.button > :global(svg){
+    margin-right: 8px;
+}
+
+.button:hover{
+    opacity: .9;
+}

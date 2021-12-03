@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from 'styles/Home.module.css'
-import Link from 'next/link'
+import Button from '@c/Button'
+import Navbar from '@c/Navbar'
+import PageLayout from '@c/PageLayout'
 
 export default function Home () {
   return (
@@ -11,16 +13,15 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-      <h1 className={styles.title}> Sheila web page</h1>
-        <nav className={styles.nav}>
-          <Link href='/conte'>Conte</Link>
-          <Link href='/ressource'>Resource</Link>
-          <Link href='/moi'>Moi</Link>
-
-        </nav>
-
-      </main>
+      {/* <main className={styles.main}> */}
+      <PageLayout>
+        <Navbar></Navbar>    
+        <h1 className={styles.title}> Sheila web page</h1>
+        <Button >
+          pulsa
+        </Button>
+      </PageLayout>
+      {/* </main> */}
     </div>
   )
 }
