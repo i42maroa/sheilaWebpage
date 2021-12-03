@@ -13,15 +13,10 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-
       {/* <main className={styles.main}> */}
       <PageLayout>
-
-      
         <Navbar></Navbar>    
         <h1 className={styles.title}> Sheila web page</h1>
-
         <Button >
           pulsa
         </Button>
