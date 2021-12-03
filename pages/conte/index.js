@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../styles/Conte.module.css'
+import styles from 'styles/Conte.module.css'
 import Link from 'next/link'
 
-export default function Conte() {
+export default function Conte () {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +16,7 @@ export default function Conte() {
           <Link href='/'>Home</Link>
         </nav>
         <h1 className={styles.title}>Conte</h1>
-        
+
       </main>
     </div>
   )
