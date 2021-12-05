@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from 'styles/Conte.module.css'
-import Navbar from '@c/Navbar'
-import PageLayout from '@c/PageLayout'
+import PageLayout from 'layouts/PageLayout'
 
 export default function Conte () {
   return (
@@ -13,8 +12,15 @@ export default function Conte () {
       </Head>
 
       <PageLayout>
-        <Navbar></Navbar>
+
+        <div>
           <h1 className={styles.title}>Conte</h1>
+        </div>
+
+        <div>
+          d
+        </div>
+
       </PageLayout>
     </div>
   )

@@ -1,0 +1,17 @@
+
+.main_column,
+.secondary_column{
+    background: #fff;
+    width: 100%;
+    margin: 2rem 0;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: var(--padding-standard);
+
+}
+
+.secondary_column{
+  height: fit-content;
+}
+
+ 

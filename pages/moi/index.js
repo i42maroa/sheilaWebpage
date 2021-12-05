@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from 'styles/Moi.module.css'
-import Navbar from '@c/Navbar'
-import PageLayout from '@c/PageLayout'
+import PageLayout from 'layouts/PageLayout'
 
 export default function Moi () {
   return (
@@ -13,9 +12,14 @@ export default function Moi () {
       </Head>
 
       <PageLayout>
-      <Navbar></Navbar>
 
-        <h1 className={styles.title}>Moi</h1>
+        <div>
+          <h1 className={styles.title}>Moi</h1>
+        </div>
+
+        <div>
+          d
+        </div>
 
         </PageLayout>
     </div>

@@ -1,0 +1,16 @@
+.postContainer{
+    width: 100%;
+    margin: 5rem auto;
+    border-top: 3px var(--secondary) solid;
+    padding: var(--padding-standard);
+    cursor: pointer;
+}
+
+.containerTags{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    justify-items: center;
+}
+
