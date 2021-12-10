@@ -14,7 +14,15 @@ export default function Home () {
 
       <PageLayout>
          <div className={styles.main_column}>
+           <h1>EL CONTE DU SHEILA</h1>
+           <img src="/sheila.jpg" alt="El conte du sheila" height="200px" width="200px"/>
+           <p>Descripcion de lo que consiste el cuento de sheila</p>
 
+           <h2>OBJETIVOS</h2>
+           <lu>
+             <li>Primer objetivo</li>
+             <li>Segundo  objetivo</li>
+           </lu>
          </div>
         <div className={styles.secondary_column}>
         <Perfil></Perfil>

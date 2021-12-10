@@ -1,0 +1,4 @@
+.listPostContainer{
+    display: flex;
+    flex-direction: column;
+}
