@@ -1,0 +1,10 @@
+.finderContainer{
+    display: flex;
+}
+.finderBox{
+    background: blue;
+}
+
+.finderButton{
+    background: red;
+}

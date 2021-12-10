@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import styles from 'styles/Home.module.css'
-import Button from '@c/Button'
-import Navbar from '@c/Navbar'
-import PageLayout from '@c/PageLayout'
+import PageLayout from 'layouts/PageLayout'
+import Perfil from 'components/Perfil'
 
 export default function Home () {
   return (
@@ -13,15 +12,22 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <main className={styles.main}> */}
       <PageLayout>
-        <Navbar></Navbar>    
-        <h1 className={styles.title}> Sheila web page</h1>
-        <Button >
-          pulsa
-        </Button>
+         <div className={styles.main_column}>
+           <h1>EL CONTE DU SHEILA</h1>
+           <img src="/sheila.jpg" alt="El conte du sheila" height="200px" width="200px"/>
+           <p>Descripcion de lo que consiste el cuento de sheila</p>
+
+           <h2>OBJETIVOS</h2>
+           <lu>
+             <li>Primer objetivo</li>
+             <li>Segundo  objetivo</li>
+           </lu>
+         </div>
+        <div className={styles.secondary_column}>
+        <Perfil></Perfil>
+        </div>
       </PageLayout>
-      {/* </main> */}
     </div>
   )
 }

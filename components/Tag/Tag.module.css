@@ -1,0 +1,6 @@
+.tag{
+    border-radius: 40px;
+    background: var(--primary);
+    padding: 0.5rem 1rem;
+    color: #fff;
+}

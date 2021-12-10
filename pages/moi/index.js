@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from 'styles/Moi.module.css'
-import Navbar from '@c/Navbar'
-import PageLayout from '@c/PageLayout'
+import UniquePageLayout from 'layouts/UniquePageLayout'
 
 export default function Moi () {
   return (
@@ -12,12 +11,16 @@ export default function Moi () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <PageLayout>
-      <Navbar></Navbar>
+      <UniquePageLayout>
+        <div className={styles.main_column}>
+            <h2>Soy Sheila Denamiel</h2>
+            <p>Hola, soy sheila denamiel y soy tal cual y para cual</p>
 
-        <h1 className={styles.title}>Moi</h1>
+            <p>Mis objetivos con esta página web son tal cual para cual</p>
 
-        </PageLayout>
+            <p>Contacto conmigo</p>
+        </div>
+      </UniquePageLayout>
     </div>
   )
 }

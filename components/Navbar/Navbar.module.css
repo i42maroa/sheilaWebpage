@@ -1,0 +1,39 @@
+.nav{
+    width: 100%;
+    min-height: var(--height-navbar);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    background: var(--secondary);
+    border-bottom: 5px solid var(--primary);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+.nav img {
+    position: absolute;
+    left: 3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.containerNav{
+    display: flex;
+    column-gap: 10px;
+}
+
+
+
+.containerNav > :Link{
+    margin: 20px;
+    color:  #fff ;
+}
+
+.a{
+    color:  var(--primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
