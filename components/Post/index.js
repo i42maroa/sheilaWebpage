@@ -2,7 +2,7 @@ import Tag from 'components/Tag'
 import styles from './Post.module.css'
 import React, { useState } from 'react'
 
-export default function Post ({ title, src, description }) {
+export default function Post ({ title, src, description, tags, id }) {
   const [showMoreInfo, setCount] = useState(false)
 
   const toggleShowMoreInfo = () => {
@@ -13,6 +13,7 @@ export default function Post ({ title, src, description }) {
           <>
               <div className={styles.postContainer} onClick={toggleShowMoreInfo}>
                     <h2>{title}</h2>
+                    <p>{id}</p>
 
                     {showMoreInfo
                       ? <>
@@ -21,10 +22,10 @@ export default function Post ({ title, src, description }) {
                     </>
                       : null }
                     <div className={styles.containerTags}>
-                        <Tag>Animales</Tag>
-                        <Tag>Vocabulary</Tag>
-                        <Tag>Deporte</Tag>
-                        <Tag>ilusion</Tag>
+                        {tags.map(
+                          (text, index) => (
+                              <Tag key={index}>{text}</Tag>
+                          ))}
                     </div>
 
                     {showMoreInfo

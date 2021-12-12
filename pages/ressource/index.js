@@ -1,15 +1,22 @@
 import Head from 'next/head'
 import styles from 'styles/Ressource.module.css'
 import PageLayout from 'layouts/PageLayout'
-import ListPost from 'components/ListPost'
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Finder from 'components/Finder'
 import Tag from 'components/Tag'
 
-export default function Ressource () {
-  const [titleListPost, setTitleListPost] = useState('Ultimas aportaciones')
+import Post from 'components/Post'
+// import { fetchResourcesFirebaseDB } from 'firebase/start'
+import { fetchResourcesFirebaseDB } from 'prueba/prueba'
+// import { prueba } from 'firebase/client'
 
-  setTitleListPost()
+export default function Ressource () {
+  // const [titleListPost, setTitleListPost] = useState('Ultimas aportaciones')
+  const [resourcesLine, setResourcesLine] = useState([])
+
+  useEffect(() => {
+    fetchResourcesFirebaseDB().then(setResourcesLine)
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -21,7 +28,20 @@ export default function Ressource () {
 
       <PageLayout>
          <div className={styles.main_column}>
-          <ListPost title={titleListPost} ></ListPost>
+          {/* <ListPost title={titleListPost} ></ListPost> */}
+           {resourcesLine.map(
+             ({ id, title, src, description, tags }) => (
+            <Post
+              key={id}
+              id={id}
+              title={title}
+              src={src}
+              description={description}
+              tags={tags}
+
+            />
+             )
+           )}
          </div>
         <div className={styles.secondary_column}>
 
