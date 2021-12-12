@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, getDocs } from 'firebase/firestore'
+import { getFirestore, collection, getDocs, storage } from 'firebase/firestore'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -55,4 +55,10 @@ export const fetchResourcesFirebaseDB2 = () => {
         }
       })
     })
+}
+
+export const uploadImage = (file) => {
+  const ref = storage().ref(`images/${file.name}`)
+  const task = ref.put(file)
+  return task
 }
