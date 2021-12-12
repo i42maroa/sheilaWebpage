@@ -19,10 +19,10 @@ export default function Home () {
            <p>Descripcion de lo que consiste el cuento de sheila</p>
 
            <h2>OBJETIVOS</h2>
-           <lu>
+           <ul>
              <li>Primer objetivo</li>
              <li>Segundo  objetivo</li>
-           </lu>
+           </ul>
          </div>
         <div className={styles.secondary_column}>
         <Perfil></Perfil>
