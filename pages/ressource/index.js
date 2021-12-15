@@ -30,13 +30,14 @@ export default function Ressource () {
          <div className={styles.main_column}>
           {/* <ListPost title={titleListPost} ></ListPost> */}
            {resourcesLine.map(
-             ({ id, title, src, description, tags, createdAt }) => (
+             ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }) => (
             <Post
               key={id}
               id={id}
-              title={title}
-              src={src}
-              description={description}
+              mainTitle={mainTitle}
+              mainFooter={mainFooter}
+              mainDescription={mainDescription}
+              section={section}
               tags={tags}
               createdAt={createdAt}
             />
