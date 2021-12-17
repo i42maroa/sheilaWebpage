@@ -27,8 +27,9 @@ export default function Ressource () {
       </Head>
 
       <PageLayout>
+
          <div className={styles.main_column}>
-          {/* <ListPost title={titleListPost} ></ListPost> */}
+         
            {resourcesLine.map(
              ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }) => (
             <Post
