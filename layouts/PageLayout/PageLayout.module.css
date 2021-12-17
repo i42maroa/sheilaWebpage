@@ -9,6 +9,11 @@
     background: transparent;
 }
 
+.head{
+    height: 100px;
+    color: var(--secondary);
+}
+
 .column{   
     display: grid;
     grid-template-columns: 3fr 1fr;
