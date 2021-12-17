@@ -27,8 +27,10 @@ export default function Ressource () {
       </Head>
 
       <PageLayout>
+
          <div className={styles.main_column}>
           {/* <ListPost title={titleListPost} ></ListPost> */}
+          <h1>Le conte de Sheila</h1>
            {resourcesLine.map(
              ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }) => (
             <Post

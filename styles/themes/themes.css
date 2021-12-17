@@ -1,10 +1,29 @@
+@font-face {
+    font-family: "Domine-regular";
+    src: url("/fonts/domine/Domine.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Domine-bold";
+    src: url("/fonts/domine/Domine-bold.ttf");
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/inter/Inter.ttf");
+    font-weight: 300;
+}
+
 :root{
     --primary: #b8dd2a;
     --primary-opacity3: #b8dd2a33;
     --secondary:#543c01;
     --background:#f3f1cd;
-    --font-base:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    --font-title: Domine-regular;
+    --font-base: Inter;
     --font-size:1rem;
     --padding-standard: 1rem 2rem;
 
