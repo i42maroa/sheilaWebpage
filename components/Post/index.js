@@ -16,11 +16,14 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
   return (
           <>
               <div className={styles.postContainer} onClick={toggleShowMoreInfo}>
-
                   <header className={styles.postHeader}>
-                    <h2 title={id} >{mainTitle}</h2><h4>
-                    <span> · </span>
-                    <time className={styles.postHeaderTime} title={createdAtFormated}>{timeago}</time></h4>
+                    <h2 title={id} >{mainTitle}</h2>               
+                    <h6>
+                      <time 
+                        className={styles.postHeaderTime} 
+                        title={createdAtFormated}>{timeago}
+                      </time>
+                    </h6>
                   </header>
 
                   { mainDescription ? <p>{mainDescription}</p> : ''}
@@ -42,7 +45,6 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
                   <footer className={styles.footer}>
 
                     { mainFooter && <p>{mainFooter}</p> }
-
                     <div className={styles.containerTags}>
                         {tags.map((text, index) => (
                               <Tag key={index}>{text}</Tag>

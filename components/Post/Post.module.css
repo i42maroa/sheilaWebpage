@@ -1,33 +1,28 @@
 .postContainer{
     width: 100%;
-    margin: 5rem auto;
-    border-top: 3px var(--secondary) solid;
+    margin: 0 auto;
     padding: var(--padding-standard);
     cursor: pointer;
 }
 
 .containerSections{
     display: flex;
-    flex-direction: column;
-    margin: auto 2rem;
-    padding: var(--padding-standard);
+    flex-direction: column; 
 }
 
 .postHeader{
-    width: 100%;
-    height: 100%;
+    width: 100%;   
     display: flex;
     justify-items: center;
-    border-bottom: var(--secondary) solid 2px;
+    border-bottom: var(--secondary) solid 1px;
+    position: relative;
     padding: var(--padding-standard);
 }
 
 .postHeaderTime{
     color: #555;
-    align-items: center;
-    justify-items: center;
-    height: 100%;
-
+    position: absolute;
+    right: 0;
 }
 
 .containerTags{

@@ -21,11 +21,11 @@
     --primary: #b8dd2a;
     --primary-opacity3: #b8dd2a33;
     --secondary:#543c01;
-    --background:#f7f6e6;
+    --background:#f3f2d9;
     --font-title: Domine-bold;
     --font-base: Inter;
     --font-size: 1rem;
-    --padding-standard: 1rem 2rem;
+    --padding-standard: 1rem 1.5rem ;
 
     --height-navbar:1rem;
 }

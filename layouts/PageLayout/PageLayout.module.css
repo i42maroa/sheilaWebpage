@@ -10,8 +10,11 @@
 }
 
 .head{
-    height: 100px;
     color: var(--secondary);
+}
+
+.h1{
+    margin: 1.5rem auto;
 }
 
 .column{   
