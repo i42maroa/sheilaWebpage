@@ -24,15 +24,18 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
                         title={createdAtFormated}>{timeago}
                       </time>
                     </h6>
+
                   </header>
 
-                  { mainDescription ? <p>{mainDescription}</p> : ''}
+                  <section className={styles.postBody}>
 
+                  { mainDescription ? <p>{mainDescription}</p> : ''}
+                 
                   <div className={styles.containerSections}>
-                      {section.map(({ title, description, src }) => (
+                      {section && section.map(({ title, description, src }) => (
                           <>
                             { title && <h3>{title}</h3> }
-                            { description && <p>{description}</p> }
+                            { description && <p className={styles.containerSectionsText}>{description}</p> }
                             <div className={styles.containerSrc}> { src &&
                               src.map((text, index) => (
                                 <img key={index} className={styles.src} src={text} alt="resource image" />
@@ -41,18 +44,23 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
                           </>
                       ))}
                   </div>
-
-                  <footer className={styles.footer}>
-
-                    { mainFooter && <p>{mainFooter}</p> }
-                    <div className={styles.containerTags}>
-                        {tags.map((text, index) => (
+                  <div className={styles.containerTags}>
+                        {tags && tags.map((text, index) => (
                               <Tag key={index}>{text}</Tag>
                         ))}
                     </div>
+                  </section>              
 
-                    <h4>Hecho por Sheila Denamiel</h4>
-                    <time title={timeago} >{createdAtFormated}</time>
+                  <footer className={styles.postFooter}>
+                    
+
+                    <p className={styles.textFooter}>{ mainFooter && <p>{mainFooter}</p> }  </p>                
+
+                    <div className={styles.makeItContainer}>
+                       <h4 className={styles.makeItTitle}>Sheila Denamiel</h4> 
+                       <time className={styles.makeItTime} 
+                        title={timeago} >{createdAtFormated}</time>
+                    </div>                                    
                   </footer>
 
               </div>

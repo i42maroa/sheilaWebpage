@@ -1,55 +1,101 @@
 .postContainer{
     width: 100%;
     margin: 0 auto;
-    padding: var(--padding-standard);
-    cursor: pointer;
+    background: var(--background-page); 
+    box-shadow: var(--box-shadow);
+    border-radius: 0.2rem;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, var(--background-page), var(--background-page-gradient));
 }
 
 .containerSections{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;    
+}
+
+.containerSectionsText{
+    width: 80%;
+
+    margin: 0 auto;
 }
 
 .postHeader{
     width: 100%;   
     display: flex;
     justify-items: center;
-    border-bottom: var(--secondary) solid 1px;
+    /* border-bottom: var(--secondary) solid 1px; */
     position: relative;
+    padding: var(--padding-title);
+}
+
+.postBody{
     padding: var(--padding-standard);
+    /* background: linear-gradient(to left, var(--background-page), var(--background-page-gradient)); */
 }
 
 .postHeaderTime{
     color: #555;
     position: absolute;
-    right: 0;
+    right: 2rem;
+    cursor: pointer;
+    transition: font-style .5s;
+}
+.postHeaderTime:hover{
+    font-style: italic;
+    
 }
 
 .containerTags{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    margin: var(--padding-standard);
+    width: 80%;
+    margin: 0.5rem auto;
 }
 
 .containerSrc{
     margin: 2rem auto;
-    width: 80%;
+    width: 70%;
+    height: auto;
 }
 
 .src{
     width: 100%;
     height: auto;
     margin: 1rem auto;
+    border-radius: 0.2rem;
 }
 
-.footer{
+.postFooter{
     display: flex;
     flex-direction: column;
-    border-top: var(--secondary) solid 2px;
+    /* border-top: var(--secondary) solid 2px; */
     width: 100%;
+    padding: var(--padding-footer);
+     /* background: linear-gradient(var(--background-page-gradient), var(--background-page-footer));  */
+     
+}
+
+.makeItContainer{
+    display: flex;
+    flex-direction: column;
     margin: 1rem auto;
-    padding: var(--padding-standard);
+    border-top: var(--secondary) solid 1px;
+    padding-top: 0.5rem;
+}
+
+.textFooter{
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.makeItTitle{
+    font-size: 1rem;
+}
+
+.makeItTime{
+    color: #555;
+    text-align: center;
+    font-size: 0.7rem;
 }

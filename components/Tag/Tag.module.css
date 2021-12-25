@@ -1,6 +1,17 @@
 .tag{
-    border-radius: 40px;
-    background: var(--primary);
-    padding: 0.5rem 1rem;
+    background: linear-gradient( var(--secondary-gradient), var(--secondary));
+    padding: 0 0.5rem;
     color: #fff;
+    width: 6rem;
+    height: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.tag:hover{
+    background: var(--secondary);
 }

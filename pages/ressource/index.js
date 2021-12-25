@@ -31,17 +31,21 @@ export default function Ressource () {
          <div className={styles.main_column}>
          
            {resourcesLine.map(
-             ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }) => (
-            <Post
-              key={id}
-              id={id}
-              mainTitle={mainTitle}
-              mainFooter={mainFooter}
-              mainDescription={mainDescription}
-              section={section}
-              tags={tags}
-              createdAt={createdAt}
-            />
+             ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }, index, array) => (
+            <>
+              <Post
+                key={id}
+                id={id}
+                mainTitle={mainTitle}
+                mainFooter={mainFooter}
+                mainDescription={mainDescription}
+                section={section}
+                tags={tags}
+                createdAt={createdAt}
+              />
+              { array.length !== index + 1  ? <div className={styles.postSeparator}></div> : <></>}
+              
+            </>
              )
            )}
          </div>
