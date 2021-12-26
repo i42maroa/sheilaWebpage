@@ -8,6 +8,7 @@ import Tag from 'components/Tag'
 import Post from 'components/Post'
 // import { fetchResourcesFirebaseDB } from 'firebase/start'
 import { fetchResourcesFirebaseDB } from 'prueba/prueba'
+import Perfil from 'components/Perfil'
 // import { prueba } from 'firebase/client'
 
 export default function Ressource () {
@@ -28,8 +29,7 @@ export default function Ressource () {
 
       <PageLayout>
 
-         <div className={styles.main_column}>
-         
+         <div className={styles.main_column}>     
            {resourcesLine.map(
              ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }, index, array) => (
             <>
@@ -43,30 +43,43 @@ export default function Ressource () {
                 tags={tags}
                 createdAt={createdAt}
               />
-              { array.length !== index + 1  ? <div className={styles.postSeparator}></div> : <></>}
-              
+              { array.length !== index + 1  ? <div className={styles.postSeparator}></div> : <></>}            
             </>
              )
            )}
          </div>
         <div className={styles.secondary_column}>
+          {/* <Finder></Finder> */}
+          <div className={styles.secondaryColumnSection}>
+            <h3 className={styles.secondaryColumnTitle}>¿Quién soy?</h3>          
+            <Perfil></Perfil>
+          </div>
+                 
+          <div className={styles.secondaryColumnSection}>
+            <h3 className={styles.secondaryColumnTitle}>Último post</h3>
+            <lu className={styles.luTheme}>
+              <li className={styles.liTheme}><h5>À L'Aéroport</h5></li>
+            </lu>
+          </div>
 
-          <Finder></Finder>
+          <div className={styles.secondaryColumnSection}>
+            <h3 className={styles.secondaryColumnTitle}>Más vistos</h3>
+            <lu className={styles.luTheme}>
+              <li className={styles.liTheme}><h5>À L'Aéroport</h5></li>
+              <li className={styles.liTheme}><h5>Vive Noël !</h5></li>
+              <li className={styles.liTheme}><h5>Le potager de mon école II</h5></li>
+            </lu>
+          </div>
 
-          <h3>Lista temas</h3>
-          <lu className={styles.luTheme}>
-           <li className={styles.liTheme}><h4><strong>Tema 1:</strong> Carlos cabezon</h4></li>
-           <li className={styles.liTheme}><h4><strong>Tema 2:</strong> jeje saludos</h4></li>
-           <li className={styles.liTheme}><h4><strong>Tema 3:</strong> Buenas tardes</h4></li>
-          </lu>
-
-          <h3>Tags</h3>
-          <lu className={styles.luTheme}>
-              <Tag>Furbo</Tag>
-              <Tag>Jeje</Tag>
-              <Tag>Hola</Tag>
-              <Tag>Buenas</Tag>
-          </lu>
+          <div className={styles.secondaryColumnSection}>
+            <h3 className={styles.secondaryColumnTitle}>Por temas</h3>
+            <div className={styles.tagContainer}>
+              <div className={styles.tag}><Tag>Cuentos</Tag></div>
+              <div className={styles.tag}><Tag> Jeje</Tag></div>
+              <div className={styles.tag}><Tag>Hola</Tag></div>
+              <div className={styles.tag}><Tag> Buenas</Tag></div>          
+            </div>
+          </div>
         </div>
       </PageLayout>
 

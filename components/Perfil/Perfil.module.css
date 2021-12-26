@@ -20,3 +20,10 @@
     gap: 1rem;
     justify-items: center;
 }
+
+.text{
+    
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
