@@ -20,15 +20,18 @@
 :root{
     --primary: #b8dd2a;
     --primary-opacity3: #b8dd2a33;
+    
     --secondary:#543c01;
     --secondary-gradient:#775602;
-    --background:#f3f2d9;
+    /* --secondary-gradient-gradient:#776026; */
     --background:#fff;
-    --background-gradient:#e9e6ba;
+    --background-layout: #bdb192;
+    --background-layout-gradient: #ada388;
     --background-gradient:#eee;
     --background-page:#fff3e8;
     --background-page-gradient:#ddceb4;
     /* --background-page-footer:#c4af8d; */
+
     --box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     --font-title: Domine-bold;
     --font-base: Inter;
@@ -36,5 +39,5 @@
     --padding-standard: 1rem 1.5rem ;
     --padding-title: 2rem 2.5rem ;
     --padding-footer: 2rem 2.5rem 1rem 2rem;
-    --height-navbar:1rem;
+    --height-navbar: 0.5rem;
 }

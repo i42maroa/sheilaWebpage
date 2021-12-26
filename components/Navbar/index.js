@@ -5,8 +5,6 @@ export default function Navbar () {
   return (
         <>
             <nav className={styles.nav}>
-                {/* <img src="headerPicture.png" alt="header" width="180" height="60"></img> */}
-            
                 <div className={styles.containerNav}>
                   <Link className={styles.a} href='/'>
                     <a className={styles.a}>Home</a></Link>

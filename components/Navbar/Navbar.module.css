@@ -3,18 +3,16 @@
     min-height: var(--height-navbar);
     display: flex;
     justify-content: center;
-   
-    border-top: 1px solid var(--secondary);
     /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); */
+    background: linear-gradient(var(--background-layout-gradient), var(--background-layout));
+    /* border-top: 1px solid var(--background-page); */
+    background: transparent;
+    
 }
-
 
 .containerNav{
     display: flex;
-    column-gap: 10px;
 }
-
-
 
 .containerNav > :Link{
     margin: 20px;
@@ -22,7 +20,7 @@
 }
 
 .a{
-    color: var(--secondary);
+    color: var(--background-page);
     font-size: 1rem;
     font-weight: 500;
     align-self: flex-end;
