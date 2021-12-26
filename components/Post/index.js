@@ -17,30 +17,35 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
           <>
               <div className={styles.postContainer} onClick={toggleShowMoreInfo}>
                   <header className={styles.postHeader}>
-                    <h2 title={id} >{mainTitle}</h2>               
+                    <h2 className={styles.postHeaderTitle} title={id} >{mainTitle}</h2>               
                     <h6>
                       <time 
                         className={styles.postHeaderTime} 
                         title={createdAtFormated}>{timeago}
                       </time>
                     </h6>
-
                   </header>
 
                   <section className={styles.postBody}>
 
-                  { mainDescription ? <p>{mainDescription}</p> : ''}
+                  { mainDescription ? <p className={styles.containerSectionsText}>{mainDescription}</p> : <></>}
                  
                   <div className={styles.containerSections}>
                       {section && section.map(({ title, description, src }) => (
                           <>
                             { title && <h3>{title}</h3> }
                             { description && <p className={styles.containerSectionsText}>{description}</p> }
-                            <div className={styles.containerSrc}> { src &&
+
+                             { src &&
                               src.map((text, index) => (
-                                <img key={index} className={styles.src} src={text} alt="resource image" />
+                                <>
+                                  <div className={styles.containerSrc}>
+                                    <img key={index} className={styles.src} src={text} alt="resource image" />
+                                  </div>
+                                </>
+                                
                               ))}
-                            </div>
+                
                           </>
                       ))}
                   </div>
@@ -53,7 +58,6 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
 
                   <footer className={styles.postFooter}>
                     
-
                     <p className={styles.textFooter}>{ mainFooter && <p>{mainFooter}</p> }  </p>                
 
                     <div className={styles.makeItContainer}>

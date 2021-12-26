@@ -1,6 +1,5 @@
 .postContainer{
-    width: 100%;
-    margin: 0 auto;
+    width: 98%;
     background: var(--background-page); 
     box-shadow: var(--box-shadow);
     border-radius: 0.2rem;
@@ -10,13 +9,13 @@
 
 .containerSections{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
 }
 
 .containerSectionsText{
     width: 80%;
-
-    margin: 0 auto;
+    margin: 0.5rem auto; 
+    text-align: justify;
 }
 
 .postHeader{
@@ -25,18 +24,26 @@
     justify-items: center;
     /* border-bottom: var(--secondary) solid 1px; */
     position: relative;
-    padding: var(--padding-title);
+    padding: 2rem;
+    
+}
+
+.postHeaderTitle{
+    border-bottom: var(--brown) solid 1px;
+    padding: 0 0 0.5rem 1rem ;
+    width: 100%;
 }
 
 .postBody{
-    padding: var(--padding-standard);
+    padding: 0 1.5rem;
     /* background: linear-gradient(to left, var(--background-page), var(--background-page-gradient)); */
 }
 
 .postHeaderTime{
     color: #555;
     position: absolute;
-    right: 2rem;
+    right: 3rem;
+    padding-top: 0.2rem;
     cursor: pointer;
     transition: font-style .5s;
 }
@@ -62,7 +69,7 @@
 .src{
     width: 100%;
     height: auto;
-    margin: 1rem auto;
+    margin: 0 auto;
     border-radius: 0.2rem;
 }
 
@@ -80,14 +87,15 @@
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
-    border-top: var(--secondary) solid 1px;
+    border-top: var(--brown) solid 1px;
     padding-top: 0.5rem;
 }
 
 .textFooter{
     text-align: center;
     font-size: 0.7rem;
-    margin: 0;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .makeItTitle{

@@ -2,10 +2,9 @@
 .main_column,
 .secondary_column{
     width: 100%;
-    margin: 2rem 0;
+    margin: 0;
     border-radius: 5px;
     padding: var(--padding-standard);
-
 }
 
 .main_column{
@@ -17,6 +16,8 @@
   height: fit-content;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   background: linear-gradient(var(--white-page), var(--white-page-gradient));
+  margin: 0 1rem;
+  width: 95%;
 }
 
 .postSeparator{
