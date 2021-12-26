@@ -1,5 +1,5 @@
 .tag{
-    background: linear-gradient( var(--secondary-gradient), var(--secondary));
+    background: linear-gradient( var(--brown-gradient), var(--brown));
     padding: 0 0.5rem;
     color: #fff;
     width: 6rem;
@@ -13,5 +13,5 @@
 }
 
 .tag:hover{
-    background: var(--secondary);
+    background: var(--brown);
 }

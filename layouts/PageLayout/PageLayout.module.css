@@ -6,7 +6,9 @@
     align-items: center;
     height: fit-content ;
     width: 100%;
-    background: var(--background-layout);
+    background: var(--smoth-brown-layout);
+    background: linear-gradient(var(--smoth-brown-layout), var(--smoth-brown-layout-gradient));
+    background: linear-gradient(to bottom left, var(--smoth-brown-layout), var(--smoth-brown-layout-gradient));
 }
 
 .column{   
@@ -16,8 +18,6 @@
     column-gap: 2rem;
     margin: var(--height-navbar) 0;
 }
-
-
 
 @media (min-width: 1200px){
     .main{

@@ -5,7 +5,7 @@
     box-shadow: var(--box-shadow);
     border-radius: 0.2rem;
     overflow: hidden;
-    background: linear-gradient(to bottom left, var(--background-page), var(--background-page-gradient));
+    background: linear-gradient(to bottom left, var(--white-page), var(--white-page-gradient));
 }
 
 .containerSections{

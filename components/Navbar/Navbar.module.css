@@ -3,11 +3,8 @@
     min-height: var(--height-navbar);
     display: flex;
     justify-content: center;
-    /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); */
     background: linear-gradient(var(--background-layout-gradient), var(--background-layout));
-    /* border-top: 1px solid var(--background-page); */
-    background: transparent;
-    
+    background: transparent;  
 }
 
 .containerNav{
@@ -20,7 +17,7 @@
 }
 
 .a{
-    color: var(--background-page);
+    color: var(--white-page);
     font-size: 1rem;
     font-weight: 500;
     align-self: flex-end;
