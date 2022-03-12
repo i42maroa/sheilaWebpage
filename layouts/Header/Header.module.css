@@ -1,0 +1,18 @@
+.head{
+    color: var(--white-page);
+    text-align: center;
+    width: 100%;
+    /* background: linear-gradient(var(--secondary-gradient), var(--secondary)); */
+    
+}
+
+.headTitle{
+    background: linear-gradient(var(--brown-gradient), var(--brown));
+    padding: 2rem 0;  
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.h1{ 
+    text-align: center;
+    width: auto;
+}

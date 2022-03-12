@@ -1,26 +1,70 @@
 
 .main_column,
 .secondary_column{
-    background: #fff;
     width: 100%;
-    margin: 2rem 0;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    margin: 0;
     border-radius: 5px;
-    padding: var(--padding-standard);
+    padding: 0 1.5rem;
+}
 
+.main_column{
+  background: transparent;
+  padding: 0;
 }
 
 .secondary_column{
   height: fit-content;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(var(--white-page), var(--white-page-gradient));
+
+  max-width: 20rem;
 }
 
+.secondaryColumnSection{
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0 0.5rem;
+}
+
+.secondaryColumnTitle{
+  padding: 0.5rem 0;
+}
+
+.secondaryColumnText{
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.postSeparator{
+  width: 100%;
+  height: 4rem;
+  background-color: transparent;
+}
  
 .luTheme{
   text-decoration: none;
   list-style: none;
+ 
 }
 
 .liTheme{
   text-decoration: none;
   list-style: none;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+.liTheme:hover{
+  font-style: italic;
+}
+
+.tagContainer{
+  display: flex;
+  flex-wrap:wrap;
+  margin: 0 auto;
+}
+
+.tag{
+  margin: 0.3rem 0.5rem;
 }

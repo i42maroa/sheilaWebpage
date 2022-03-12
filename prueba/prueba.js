@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, getDocs, storage } from 'firebase/firestore'
+import { getFirestore, collection, getDocs, storage, orderBy, doc } from 'firebase/firestore'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -26,7 +26,8 @@ try {
 const db = getFirestore()
 
 export const fetchResourcesFirebaseDB = () => {
-  return getDocs(collection(db, 'resources')).then(({ docs }) => {
+  return getDocs(collection(db, 'resources'))
+    .then(({ docs }) => {
     return docs.map((doc) => {
       const data = doc.data()
       const id = doc.id

@@ -18,14 +18,24 @@
 }
 
 :root{
-    --primary: #b8dd2a;
-    --primary-opacity3: #b8dd2a33;
-    --secondary:#543c01;
-    --background:#f7f6e6;
+    --green: #b8dd2a;
+    --dark-green: #b8dd2a33; 
+    --brown:#543c01;
+    --brown-gradient:#775602;
+    --white:#fff;   
+    --white-gradient:#eee;
+    --smoth-brown: #cac0a6;
+    --smoth-brown-gradient: #c7bea6;
+    --smoth-brown-layout: #dfd8c4;
+    --white-page:#fafafa;
+    --white-page-gradient:#f8f8f8;
+
+    --box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     --font-title: Domine-bold;
     --font-base: Inter;
     --font-size: 1rem;
-    --padding-standard: 1rem 2rem;
-
-    --height-navbar:1rem;
+    --padding-standard: 1rem 1.5rem ;
+    --padding-title: 2rem 2rem 1rem 2rem;
+    --padding-footer: 2rem 2.5rem 1rem 2rem;
+    --height-navbar: 0.5rem;
 }
