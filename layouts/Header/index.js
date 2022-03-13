@@ -1,4 +1,6 @@
 import Navbar from 'components/Navbar'
+import ShreilakLetter from 'components/SVG/shreilakLetter'
+import WoodHeader from 'components/SVG/woodHeader'
 import styles from './Header.module.css'
 
 export default function Header ({}) {
@@ -6,11 +8,13 @@ export default function Header ({}) {
         <>
             <div className={styles.head}>
                 <div className={styles.headTitle}>
-                  <h1 className={styles.h1}>Le conte de Sheila</h1>
+                  <WoodHeader/>
+                  <div className={styles.shreilakTitle}>
+                    <ShreilakLetter/>
+                  </div>    
                 </div>
                 <Navbar></Navbar>
-            </div>
-            
+            </div>           
         </>
   )
 }

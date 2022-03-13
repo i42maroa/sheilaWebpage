@@ -20,6 +20,11 @@
 
 @media (min-width: 1200px){
     .main{
-        width: 1200px;     
+        /* width: 1200px;      */
+        width: 100%;
+    }
+
+    .column{
+        width: 1200px;
     }
 }

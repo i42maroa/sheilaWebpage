@@ -1,26 +1,25 @@
-.main_column,
-.secondary_column{
-    background: #fff;
-    width: 100%;
-    margin: 2rem 0;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: var(--padding-standard);
-
+.bookContainer{
+  width: 100%;
+  position: relative;
+  background: red;
 }
 
-.secondary_column{
-  height: fit-content;
+.bookPageContainer{
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: blue;
 }
 
-
- 
-.luConte{
-  text-decoration: none;
-  list-style: none;
+.bookLeftPage{
+  width: 50%;
+  background: yellow;
 }
 
-.liConte{
-  text-decoration: none;
-  list-style: none;
+.bookRightPage{
+  width: 50%;
+  background: green;
 }
