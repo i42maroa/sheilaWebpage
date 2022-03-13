@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from 'styles/Conte.module.css'
-import PageLayout from 'layouts/PageLayout'
-import ConteComponent from 'components/ConteComponent'
+import UniquePageLayout from 'layouts/UniquePageLayout'
+import BookSVG from 'components/SVG/book'
 
 export default function Conte () {
   return (
@@ -12,24 +12,26 @@ export default function Conte () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <PageLayout>
+      <UniquePageLayout>
 
-        <div className={styles.main_column}>
-          <h1 className={styles.title}>Conte</h1>
+        <div className={styles.bookContainer}> 
+          <BookSVG/>
 
-          <ConteComponent></ConteComponent>
+          <div className={styles.bookPageContainer}>
+              
+              <div className={styles.bookLeftPage}>
+                <p>d</p>
+              </div>
+
+              <div className={styles.bookRightPage}>
+              <img src='princess-sheila.svg' height={200}></img>
+              <img src='castle.svg' height={200}></img>
+              </div>
+          </div>
         </div>
-
-        <div className={styles.secondary_column}>
-        <h3>Lista Cuentos</h3>
-          <lu className={styles.luConte}>
-           <li className={styles.liConte}><h4><strong>Tema 1:</strong> Caperucita</h4></li>
-           <li className={styles.liConte}><h4><strong>Tema 2:</strong> El lobo feroz</h4></li>
-           <li className={styles.liConte}><h4><strong>Tema 3:</strong> Principito</h4></li>
-          </lu>
-        </div>
-
-      </PageLayout>
+        
+       
+      </UniquePageLayout>
     </div>
   )
 }

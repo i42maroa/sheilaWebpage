@@ -1,4 +1,5 @@
 import styles from 'components/Navbar/Navbar.module.css'
+import SingleWoodBar from 'components/SVG/singleWoodBar'
 import Link from 'next/link'
 
 export default function Navbar () {
@@ -6,11 +7,18 @@ export default function Navbar () {
         <>
             <nav className={styles.nav}>
                 <div className={styles.containerNav}>
-                  <Link className={styles.a} href='/'>
-                    <a className={styles.a}>Home</a></Link>
-                  <Link href='/conte'><a className={styles.a}>Conte</a></Link>
-                  <Link href='/ressource'><a className={styles.a}>Ressource</a></Link>
-                  <Link href='/moi'><a className={styles.a}>Moi</a></Link>
+                  <div className={styles.containerLink}>
+                    <SingleWoodBar/>
+                    <Link href='/conte'><a className={styles.a}>Conte</a></Link>
+                  </div>
+                  <div className={styles.containerLink}>
+                    <SingleWoodBar/>
+                    <Link href='/ressource'><a className={styles.a}>Ressource</a></Link>
+                  </div>
+                  <div className={styles.containerLink}>
+                    <SingleWoodBar/>
+                    <Link href='/moi'><a className={styles.a}>Moi</a></Link> 
+                  </div>                     
                 </div>
             </nav>
         </>
