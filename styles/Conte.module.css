@@ -1,25 +1,25 @@
 .bookContainer{
   width: 100%;
+  height: 100%;
   position: relative;
-  background: red;
 }
 
 .bookPageContainer{
-  position: absolute;
   display: flex;
-  top: 0;
-  left: 0;
-  right: 0;
+  flex-direction: column;
   margin: auto;
-  background: blue;
+  width: 80%;
 }
 
-.bookLeftPage{
-  width: 50%;
-  background: yellow;
+.firstPage{
+  width: 100%;
 }
 
-.bookRightPage{
-  width: 50%;
-  background: green;
+.secondPage{
+  width: 100%;
+}
+
+.gridTwoLines{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
