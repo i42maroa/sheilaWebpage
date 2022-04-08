@@ -6,10 +6,19 @@ import FirstPageSVG from 'components/SVG/firstPage'
 import SecondPageSVG from 'components/SVG/secondPage'
 import Button from 'components/Button'
 import { useState } from 'react/cjs/react.development'
+import SecondBookPage from 'components/BookPages/SecondBookPage'
+import FirstBookPage from 'components/BookPages/FirstBookPage'
+
+
+export const INDEX_PAGE ={
+  FIRST_PAGE: 0,
+  SECOND_PAGE: 1,
+  SPIDERMAN_PAGE: 2
+}
 
 export default function Conte () {
 
-  const [page, setPageBook] = useState(0);
+  const [page, setPageBook] = useState(0); 
 
 
   return (
@@ -23,32 +32,14 @@ export default function Conte () {
       <UniquePageLayout>
 
       <div className={styles.bookPageContainer}>
-        { page === 0 && 
-          <div className={styles.bookPage} >
-            <FirstPageSVG />
-            <button className={styles.elementPage} onClick={() => setPageBook((page + 1)%2)}> Next</button> 
-          </div>  
-         }
-        { page === 1 &&
-          <div className={styles.bookPage} >
-            <SecondPageSVG  />
+        { page === INDEX_PAGE.FIRST_PAGE && 
+          <FirstBookPage className={styles.bookPage}
+            onClick={() => setPageBook(INDEX_PAGE.SECOND_PAGE)} ></FirstBookPage>}
             
-            <button className={styles.elementPage} onClick={() => setPageBook((page + 1)%2)}>Back</button> 
-
-            <div className={styles.boxButtonContes}>
-              <button className={styles.buttonBook}>SpiderMan</button> 
-              <button className={styles.buttonBook}>Frozen</button> 
-              <button className={styles.buttonBook}>Ratatouille</button> 
-              <button className={styles.buttonBook}>Caperucita</button> 
-              <button className={styles.buttonBook}>Blancanieves</button>
-            </div>       
-          </div> }         
-      </div> 
-      
-      
-      
-
-      {/* <Button className={styles.secondPage} >Next</Button> */}
+        { page === INDEX_PAGE.SECOND_PAGE && 
+          <SecondBookPage className={styles.bookPage} 
+          onClick={() => setPageBook(INDEX_PAGE.FIRST_PAGE)}></SecondBookPage>}         
+      </div>   
 
       </UniquePageLayout>
     </div>
