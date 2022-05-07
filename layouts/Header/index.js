@@ -8,10 +8,8 @@ export default function Header ({}) {
         <>
             <div className={styles.head}>
                 <div className={styles.headTitle}>
-                  <WoodHeader/>
-                  <div className={styles.shreilakTitle}>
-                    <ShreilakLetter/>
-                  </div>    
+                  <ShreilakLetter className={styles.shreilakTitle}/>
+                  <WoodHeader/>              
                 </div>
                 <Navbar></Navbar>
             </div>           

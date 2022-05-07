@@ -4,13 +4,9 @@ export default function WoodHeader (props) {
     return(
   <svg
     id="woodHeader"
-    x={0}
-    y={0}
-    viewBox="0 0 1920 152.52"
-    style={{
-      enableBackground: "new 0 0 1920 152.52",
-    }}
-    xmlSpace="preserve"
+     width={1920}
+     height={152}
+    viewBox="0 0 1920 152"
     {...props}
   >
     <style>
