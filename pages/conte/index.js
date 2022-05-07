@@ -35,10 +35,10 @@ export default function Conte () {
         { page === INDEX_PAGE.FIRST_PAGE && 
           <FirstBookPage className={styles.bookPage}
             onClick={() => setPageBook(INDEX_PAGE.SECOND_PAGE)} ></FirstBookPage>}
-            
+
         { page === INDEX_PAGE.SECOND_PAGE && 
           <SecondBookPage className={styles.bookPage} 
-          onClick={() => setPageBook(INDEX_PAGE.FIRST_PAGE)}></SecondBookPage>}         
+          onClick={() => setPageBook(this)}></SecondBookPage>}         
       </div>   
 
       </UniquePageLayout>
