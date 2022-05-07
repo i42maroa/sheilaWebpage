@@ -4,15 +4,18 @@
     bottom: 0;
     top:50%;
     display: flex;
+    flex-direction: column;
     width: 40%;
     align-content: space-around;
     flex-wrap: wrap;
     margin: auto;
+    background: red;
 }
 
 .buttonBook{
     width: 40%;
-    margin: auto;
+    margin: 1rem;
+    
 }
 
 

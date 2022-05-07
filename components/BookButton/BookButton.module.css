@@ -1,0 +1,11 @@
+.buttonBack{
+    background-color: transparent;
+    min-width: 4rem;
+    height: 2rem;
+    margin: 1rem 2rem;
+    cursor: pointer;
+}
+
+.buttonBack:hover{
+    background: black;
+}

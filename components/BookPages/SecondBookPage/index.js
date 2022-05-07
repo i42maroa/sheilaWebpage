@@ -1,4 +1,5 @@
 
+import BookButton from 'components/BookButton'
 import SecondPageSVG from 'components/SVG/secondPage'
 import styles from './SecondBookPage.module.css'
 
@@ -9,12 +10,11 @@ export default function SecondBookPage ({ onClick }) {
             <button className={styles.elementPage} onClick={onClick}>Back</button> 
 
             <div className={styles.boxButtonContes}>
-                <ButtonBook>d</ButtonBook>
-              <button className={styles.buttonBook}>SpiderMan</button> 
-              <button className={styles.buttonBook}>Frozen</button> 
-              <button className={styles.buttonBook}>Ratatouille</button> 
-              <button className={styles.buttonBook}>Caperucita</button> 
-              <button className={styles.buttonBook}>Blancanieves</button>
+                <BookButton className={styles.buttonBook} onclick={() => console.log("SpiderMan")}>SpiderMan</BookButton>
+                <BookButton className={styles.buttonBook} onclick={() => console.log("Frozen")}>Frozen</BookButton>
+                <BookButton className={styles.buttonBook} onclick={() => console.log("Ratatouille")}>Ratatouille</BookButton>
+                <BookButton className={styles.buttonBook} onclick={() => console.log("Caperucita")}>Caperucita</BookButton>
+                <BookButton className={styles.buttonBook} onclick={() => console.log("Blancanieves")}>Blancanieves</BookButton>
             </div> 
         </div>
     )
