@@ -9,6 +9,7 @@ export default function SecondBookPage ({ onClick }) {
             <button className={styles.elementPage} onClick={onClick}>Back</button> 
 
             <div className={styles.boxButtonContes}>
+                <ButtonBook>d</ButtonBook>
               <button className={styles.buttonBook}>SpiderMan</button> 
               <button className={styles.buttonBook}>Frozen</button> 
               <button className={styles.buttonBook}>Ratatouille</button> 
