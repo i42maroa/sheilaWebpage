@@ -1,0 +1,23 @@
+
+.container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.testButton{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: inline-block;
+}
+
+.text{
+    color: #efeccb;
+}

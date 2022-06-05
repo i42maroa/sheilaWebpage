@@ -8,28 +8,12 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 80%;
-}
-
-.bookPage{
-  display: flex;
-  position: relative;
-}
-
-
-
-
-
-.firstPage{
   width: 100%;
-  display: none;
+  height: 100%;
 }
 
-.secondPage{
+.containerPage{
+  background: blue;
   width: 100%;
-}
-
-.gridTwoLines{
-  grid-column-start: 1;
-  grid-column-end: 3;
+  height: 100%;
 }

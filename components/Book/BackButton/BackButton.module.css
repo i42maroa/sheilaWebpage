@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    margin: 1rem 0;
+    background: var(--brown-gradient);
+    border-radius: 3px;
+    padding: 0.2rem;
+}
+
+.container:hover{
+    outline: solid 5px var(--green);
+}
+
+.testButton{
+    width: fit-content;
+    height: fit-content;
+    margin: auto 0.2rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.text{
+    font-family: var(--font-title);
+    color:#fff; 
+}
+
+.arrow {
+	width: 1.5vmin;
+	height: 1.5vmin;
+	box-sizing: border-box;
+	transform: rotate(-135deg);	
+    border-width: .5vmin .5vmin 0 0;
+    border-style: solid;
+    border-color: #fff;
+    display: block;
+    margin: 0.5rem;
+}
