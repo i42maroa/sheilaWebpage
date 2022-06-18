@@ -1,18 +1,18 @@
 
-import NextSvg from 'components/SVG/next'
+import Link from 'next/link'
 import styles from './BackButton.module.css'
 
-export default function BackButton ({ setPageBook, page }) {
+export default function BackButton ({ page }) {
     return (
             <>
-                <div className={styles.container} onClick={()=>setPageBook(page)}>
-                    {/* <NextSvg className={styles.rotate} width={15}/> */}
-                    <div class={styles.arrow}></div>
+                <div className={styles.container} >
+                    <div className={styles.arrow}></div>
                     <div className={styles.testButton}>
-                        <h3 className={styles.text}>RETOURNEZ</h3>
-                    </div>                 
-                </div>
-            
+                        <Link href={`/conte/${page}`} >
+                            <h3 className={styles.text}>RETOURNEZ</h3>
+                        </Link>   
+                    </div>                   
+                </div>      
             </>
     )
   }

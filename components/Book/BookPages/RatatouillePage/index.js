@@ -5,7 +5,7 @@ import Pages from "components/Book/Pages";
 import RessourceButton from "components/Book/RessourceButton";
 import bookStyles from '../../Book.module.css'
 
-export default function RatatouillePage ({ setPageBook }) {
+export default function RatatouillePage ({ }) {
     return (   
         <Pages
             leftPage={
@@ -19,13 +19,13 @@ export default function RatatouillePage ({ setPageBook }) {
                     </div>
                     <div className={bookStyles.layoutMiddleColumns}>
                         <div className={bookStyles.imgContainer}>
-                            <img src="bookImages/ratatouille.png" height={200}></img>
+                            <img src="../bookImages/ratatouille.png" height={200}></img>
                         </div>               
                     </div> 
                     <div className={bookStyles.layoutSingleColumn}>
                         <p className={bookStyles.bookLineText20}>Les hommes cuisinent aussi, el Ratatouille veut le montrer, nous allons connaître les différents aliments qu'il utilise pour ses grands plats.</p>
                         <div className={bookStyles.layoutButton}>
-                            <BackButton setPageBook={setPageBook} page={INDEX_PAGE.SECOND_PAGE}/>
+                            <BackButton  page={INDEX_PAGE.SECOND_PAGE}/>
                             <RessourceButton conteNum={INDEX_PAGE.RATATOUILLE_PAGE} page={1}/>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export default function RatatouillePage ({ setPageBook }) {
                         <p className={bookStyles.bookLineText20}>Nous allons l'aider à connaître tous les sports possibles et les adapter à ses goûts et caractéristiques physiques.</p>
                         <div className={bookStyles.layoutButton}> 
                             <RessourceButton conteNum={INDEX_PAGE.BLANCANIEVES_PAGE} page={2}/>
-                            <NextButton setPageBook={setPageBook} page={INDEX_PAGE.RatatouillePage  + 1} />                          
+                            <NextButton  page={INDEX_PAGE.RATATOUILLE_PAGE + 1} />                          
                         </div>  
                     </div>
                 </>

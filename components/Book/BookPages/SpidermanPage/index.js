@@ -18,7 +18,7 @@ export default function SpiderManPage ({ setPageBook }) {
                         <p className={bookStyles.bookLineText20}> Peter Parker a une vie très stressante. Il va à l'université, mais il doit aussi aller sauver le monde quand les gens en ont besoin.</p>    
                     </div>
                     <div className={bookStyles.layoutMiddleColumns}>
-                        <img src="bookImages/spiderMan_1.png" height={180}></img>
+                        <img src="../bookImages/spiderMan_1.png" height={180}></img>
                     </div>
                     <div className={bookStyles.layoutSingleColumn}>
                         <div className={bookStyles.separator}></div>
@@ -27,7 +27,7 @@ export default function SpiderManPage ({ setPageBook }) {
                     <div className={bookStyles.layoutSingleColumn}>
                         <p className={bookStyles.bookLineText20}>Nous devons l'aider à mener une vie plus calme.</p>
                         <div className={bookStyles.layoutButton}>
-                            <BackButton  setPageBook={setPageBook} page={INDEX_PAGE.SECOND_PAGE}/>
+                            <BackButton page={INDEX_PAGE.SECOND_PAGE}/>
                             <RessourceButton conteNum={INDEX_PAGE.SPIDERMAN_PAGE} page={1}/>
                         </div>
                     </div> 
@@ -42,7 +42,7 @@ export default function SpiderManPage ({ setPageBook }) {
                         <p className={bookStyles.bookLineText30}> Nous devons l'arrêter !</p>
                         <div className={bookStyles.layoutButton}>
                             <RessourceButton conteNum={INDEX_PAGE.SPIDERMAN_PAGE} page={2}/>
-                            <NextButton setPageBook={setPageBook} page={INDEX_PAGE.SPIDERMAN_PAGE  + 1} />                     
+                            <NextButton page={INDEX_PAGE.SPIDERMAN_PAGE + 1} />                     
                         </div>
                     </div>
                 </>

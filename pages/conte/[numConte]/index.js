@@ -2,8 +2,16 @@ import Head from 'next/head'
 import styles from 'styles/Conte.module.css'
 import UniquePageLayout from 'layouts/UniquePageLayout'
 import Book from 'components/Book'
+import { useRouter } from 'next/dist/client/router'
 
 export default function Conte () {
+
+  const router = useRouter()
+  const { numConte } = router.query
+
+  const checkCorrectNumConte = (conte) => {
+    return conte < 9 && conte > 0 ? conte : 0;
+  }
 
   return (
     <div >
@@ -15,7 +23,7 @@ export default function Conte () {
 
       <UniquePageLayout >   
         <div className={styles.bookPageContainer}>
-          <Book/>
+          {numConte && <Book numPage={checkCorrectNumConte(numConte)}/>}
         </div>
       </UniquePageLayout>
     </div>

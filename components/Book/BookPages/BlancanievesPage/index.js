@@ -6,7 +6,7 @@ import RessourceButton from "components/Book/RessourceButton";
 
 import bookStyles from '../../Book.module.css'
 
-export default function BlancanievesPage ({ setPageBook }) {
+export default function BlancanievesPage ({ }) {
     return (   
         <Pages
             leftPage={
@@ -17,7 +17,7 @@ export default function BlancanievesPage ({ setPageBook }) {
                         <p className={bookStyles.bookLineText20}>Ils sont très machistes et grognons, mais ils sont sous le sortilège d'une sorcière puisqu'ils étaient des mains.</p>    
                         <p className={bookStyles.bookLineText20}>Essaie de démontrer aux géants que tout travail peut être fait par une femme.</p>    
                         <div className={bookStyles.layoutButton}>
-                            <BackButton  setPageBook={setPageBook} page={INDEX_PAGE.SECOND_PAGE}/>
+                            <BackButton  page={INDEX_PAGE.SECOND_PAGE}/>
                             <RessourceButton conteNum={INDEX_PAGE.BLANCANIEVES_PAGE} page={1}/>
                         </div>
                     </div> 
@@ -34,7 +34,7 @@ export default function BlancanievesPage ({ setPageBook }) {
                     </div>
                     <div className={bookStyles.layoutMiddleColumns}>
                         <div className={bookStyles.imgContainer}>
-                            <img src="bookImages/ratatouille.png" height={200}></img>
+                            <img src="../bookImages/ratatouille.png" height={200}></img>
                         </div>               
                     </div> 
 
@@ -43,7 +43,7 @@ export default function BlancanievesPage ({ setPageBook }) {
                         <p className={bookStyles.bookLineText20}>Aidez-la à acheter des vêtements dans le magasin pour son quotidien.</p>
                         <div className={bookStyles.layoutButton}>
                             <RessourceButton conteNum={INDEX_PAGE.BLANCANIEVES_PAGE} page={2}/>
-                            <NextButton setPageBook={setPageBook} page={INDEX_PAGE.RatatouillePage  + 1} />            
+                            <NextButton page={INDEX_PAGE.BLANCANIEVES_PAGE + 1} />            
                         </div>
                     </div> 
                 </>
