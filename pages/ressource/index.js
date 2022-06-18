@@ -9,11 +9,16 @@ import Post from 'components/Post'
 // import { fetchResourcesFirebaseDB } from 'firebase/start'
 import { fetchResourcesFirebaseDB } from 'prueba/prueba'
 import Perfil from 'components/Perfil'
+import { useRouter } from 'next/dist/client/router'
+import UniquePageLayout from 'layouts/UniquePageLayout'
 // import { prueba } from 'firebase/client'
 
 export default function Ressource () {
   // const [titleListPost, setTitleListPost] = useState('Ultimas aportaciones')
   const [resourcesLine, setResourcesLine] = useState([])
+
+  const router = useRouter()
+  const { numConte, numPage } = router.query
 
   useEffect(() => {
     fetchResourcesFirebaseDB().then(setResourcesLine)
@@ -27,8 +32,8 @@ export default function Ressource () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <PageLayout>
-
+      <UniquePageLayout>
+      {console.log(numConte,numPage)}
          <div className={styles.main_column}>     
            {resourcesLine.map(
              ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }, index, array) => (
@@ -48,8 +53,7 @@ export default function Ressource () {
              )
            )}
          </div>
-        <div className={styles.secondary_column}>
-          {/* <Finder></Finder> */}
+        {/* <div className={styles.secondary_column}>
           <div className={styles.secondaryColumnSection}>
             <h3 className={styles.secondaryColumnTitle}>¿Quién soy?</h3>          
             <Perfil></Perfil>
@@ -80,8 +84,8 @@ export default function Ressource () {
               <div className={styles.tag}><Tag> Buenas</Tag></div>          
             </div>
           </div>
-        </div>
-      </PageLayout>
+        </div> */}
+      </UniquePageLayout>
 
     </div>
   )

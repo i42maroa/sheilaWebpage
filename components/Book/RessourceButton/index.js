@@ -6,7 +6,7 @@ export default function RessourceButton ({ conteNum, page }) {
             <>
                 <div className={styles.container} >
                     <div className={styles.testButton}>
-                        <Link href={`/ressource?conteNum=${conteNum}&page=${page}`}>
+                        <Link href={`/ressource?numConte=${conteNum}&numPage=${page}`}>
                             <h3 className={styles.text}>RESSOURCE</h3>
                         </Link>
                     </div>

@@ -9,7 +9,7 @@ export default function Navbar () {
                 <div className={styles.containerNav}>
                   <div className={styles.containerLink}>
                     <SingleWoodBar/>
-                    <Link href='/conte'><a className={styles.a}>Conte</a></Link>
+                    <Link href='/conte/1'><a className={styles.a}>Conte</a></Link>
                   </div>
                   <div className={styles.containerLink}>
                     <SingleWoodBar/>
