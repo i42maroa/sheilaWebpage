@@ -21,3 +21,7 @@
 .text{
     color: #efeccb;
 }
+
+.container:hover .text{
+    color:var(--green);
+}
