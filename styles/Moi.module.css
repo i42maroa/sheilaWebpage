@@ -7,3 +7,11 @@
     margin: var(--height-navbar) 0;
 
 }
+
+.bookPageContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }

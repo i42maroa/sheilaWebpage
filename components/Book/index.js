@@ -8,6 +8,7 @@ import FrozenPage from "./BookPages/FrozenPage";
 import RatatouillePage from "./BookPages/RatatouillePage";
 import CaperucitaPage from "./BookPages/CaperucitaPage";
 import BlancanievesPage from "./BookPages/BlancanievesPage";
+import MoiPage from "./BookPages/MoiPage";
 
 export const INDEX_PAGE ={
     FIRST_PAGE: 1,
@@ -18,6 +19,7 @@ export const INDEX_PAGE ={
     CAPERUCITA_PAGE:6,
     BLANCANIEVES_PAGE:7,
     SHREILAK_PAGE:8,
+    MOI_PAGE:9,
   }
 
 export default function Book ({ numPage }) {
@@ -34,6 +36,7 @@ export default function Book ({ numPage }) {
                     { page === INDEX_PAGE.CAPERUCITA_PAGE && <CaperucitaPage/>}
                     { page === INDEX_PAGE.BLANCANIEVES_PAGE && <BlancanievesPage/>}
                     { page === INDEX_PAGE.SHREILAK_PAGE && <ShreilakPage/>}
+                    { page === INDEX_PAGE.MOI_PAGE && <MoiPage/>}
             </div>
         </div>
     )

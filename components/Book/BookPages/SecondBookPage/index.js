@@ -4,7 +4,6 @@ import Pages from 'components/Book/Pages'
 import BookButton from 'components/Book/BookButton'
 import bookStyles from '../../Book.module.css'
 import styles from './SecondBookPage.module.css'
-import BackButton from 'components/Book/BackButton'
 
 export default function SecondBookPage ({ }) {
     return (     
