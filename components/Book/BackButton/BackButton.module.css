@@ -3,20 +3,22 @@
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    margin: 1rem 0;
+    margin: 0;
     background: var(--brown-gradient);
-    border-radius: 3px;
-    padding: 0.2rem;
+    border-radius: 5px;
 }
 
 .container:hover{
     outline: solid 5px var(--green);
 }
 
+.container:hover .arrow{
+    border-color: var(--green);
+}
+
 .testButton{
     width: fit-content;
     height: fit-content;
-    margin: auto 0.2rem;
     left: 0;
     right: 0;
     top: 0;
@@ -37,5 +39,5 @@
     border-style: solid;
     border-color: #fff;
     display: block;
-    margin: 0.5rem;
+    margin: 0.7rem ;
 }

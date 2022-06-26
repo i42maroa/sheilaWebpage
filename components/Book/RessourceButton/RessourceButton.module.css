@@ -13,6 +13,10 @@
     outline: solid 5px var(--green);
 }
 
+.container:hover .text{
+    color: var(--green);
+}
+
 .testButton{
     width: fit-content;
     height: fit-content;

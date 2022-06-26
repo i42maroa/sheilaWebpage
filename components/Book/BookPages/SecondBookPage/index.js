@@ -11,34 +11,27 @@ export default function SecondBookPage ({ }) {
         <Pages
             leftPage={
                 <>
-                    <div className={bookStyles.layoutSingleColumn}>
+                    <div className={bookStyles.layoutTextContainer}>
                         <p className={bookStyles.bookLineText30}> Maintenant, j'ai un problème...</p>    
-                    </div>             
-                    <div className={bookStyles.layoutMiddleColumns}>                    
-                        <p className={bookStyles.bookLineText20}>Una sorcière mèchante et envieuse a jeté un sortilège sur moir</p>    
-                    </div>
-                    <div className={bookStyles.layoutMiddleColumns}>
-                        <div className={bookStyles.imgContainer}>
-                            <img src="../bookImages/witch.png" height={200}></img>
-                        </div>               
-                    </div>    
-                    <div className={bookStyles.layoutSingleColumn}>
-                        <p className={bookStyles.bookLineText30}>Elle m'a transformée en ogresse !!</p>
-                    </div> 
-                    <div className={bookStyles.layoutMiddleColumns}>
-                        <div className={bookStyles.imgContainer}>
-                            <img src="../bookImages/shreilak.svg" width={180}></img>
-                        </div> 
-                    </div>
-                    <div className={bookStyles.layoutMiddleColumns}>
-                        <p className={bookStyles.bookLineText20}>Je besoin l'aide de mes élèves pour retrouver mon aspect normal!</p>
-                        <BackButton className={bookStyles.buttonContainer} page={INDEX_PAGE.FIRST_PAGE}/>
+                        <p className={bookStyles.bookLineText20}>
+                            <img src="../bookImages/witch.png" height={180} className={bookStyles.floatRight}/>
+                            Una sorcière mèchante et envieuse a jeté un sortilège sur moir
+                        </p>
+                    </div>  
+                    <div className={bookStyles.layoutSingleColumn}>                                        
+                        <p className={bookStyles.bookLineText30}>Elle m'a transformée en ogresse !!</p>   
+                    </div>  
+                    <div className={bookStyles.layoutTextContainer}>                         
+                        <p className={bookStyles.bookLineText20}>
+                            <img src="../bookImages/shreilak.svg" width={170} className={bookStyles.floatLeft}/>
+                            Je besoin l'aide de mes élèves pour retrouver mon aspect normal!
+                        </p>
                     </div>
                 </>
             }
             rightPage={
                 <>
-                    <div className={bookStyles.layoutSingleColumn}>
+                    <div className={bookStyles.layoutTextContainer}>
                         <p className={bookStyles.bookLineText20}>Ils doivent résoudre les problématiques des personnages de certains contes.</p>                    
                         <p className={bookStyles.bookLineText30}>Pouvez-vous m'aider, s'il vous plaît?</p>
                     </div>
@@ -53,6 +46,7 @@ export default function SecondBookPage ({ }) {
                     </div>             
                 </>
             }
+            backButton={INDEX_PAGE.FIRST_PAGE}
         />
     )
 }
