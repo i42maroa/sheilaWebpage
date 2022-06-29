@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from 'styles/Moi.module.css'
 import UniquePageLayout from 'layouts/UniquePageLayout'
-import Book, { INDEX_PAGE } from 'components/Book'
+import MoiCard from 'components/MoiCard'
 
 export default function Moi () {
   return (
@@ -13,12 +13,7 @@ export default function Moi () {
       </Head>
 
       <UniquePageLayout>
-        {/* <div className={styles.bookPageContainer}>
-          <Book numPage={INDEX_PAGE.MOI_PAGE}/>
-        </div> */}
-        <div className={styles.main_column}>
-          
-        </div>
+        <MoiCard/>
       </UniquePageLayout>
     </div>
   )
