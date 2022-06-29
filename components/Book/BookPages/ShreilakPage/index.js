@@ -1,16 +1,16 @@
-import Pages from "components/Book/Pages";
+import Pages from 'components/Book/Pages'
 
 export default function ShreilakPage ({ setPageBook }) {
-    return (   
+  return (
         <Pages
             leftPage={
                 <>
                 Shreilak
-                </>    
+                </>
             }
             rightPage={
                 <></>
             }
         />
-    )
+  )
 }

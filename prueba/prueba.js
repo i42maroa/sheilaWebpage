@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, getDocs, storage, orderBy, doc } from 'firebase/firestore'
+import { getFirestore, collection, getDocs, storage } from 'firebase/firestore'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -13,8 +13,7 @@ const firebaseConfig = {
   projectId: 'le-conte-de-sheila',
   storageBucket: 'le-conte-de-sheila.appspot.com',
   messagingSenderId: '686748912259',
-  appId: '1:686748912259:web:86606b0e55df7ebb4c29b6',
-  measurementId: '${config.measurementId}'
+  appId: '1:686748912259:web:86606b0e55df7ebb4c29b6'
 }
 
 try {
@@ -28,16 +27,16 @@ const db = getFirestore()
 export const fetchResourcesFirebaseDB = () => {
   return getDocs(collection(db, 'resources'))
     .then(({ docs }) => {
-    return docs.map((doc) => {
-      const data = doc.data()
-      const id = doc.id
+      return docs.map((doc) => {
+        const data = doc.data()
+        const id = doc.id
 
-      return {
-        ...data,
-        id
-      }
+        return {
+          ...data,
+          id
+        }
+      })
     })
-  })
 }
 
 export const fetchResourcesFirebaseDB2 = () => {

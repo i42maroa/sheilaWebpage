@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react'
 
 const ShreilakLetter = (props) => (
   <svg
@@ -8,14 +8,14 @@ const ShreilakLetter = (props) => (
     width={1520}
     viewBox="0 0 517.88 117.69"
     style={{
-      enablebackgroundLetter: "new 0 0 517.88 117.69",
+      enablebackgroundLetter: 'new 0 0 517.88 117.69'
     }}
     xmlSpace="preserve"
     {...props}
   >
     <style>
       {
-        ".borderShadow{fill:#734c28}.border{fill:#533e14}.backgroundLetter{fill:#b7ce38}.lightLetter{fill:#fdfdfb}.shadowLetter{fill:#7d9729}"
+        '.borderShadow{fill:#734c28}.border{fill:#533e14}.backgroundLetter{fill:#b7ce38}.lightLetter{fill:#fdfdfb}.shadowLetter{fill:#7d9729}'
       }
     </style>
     <g id="borderShadow">

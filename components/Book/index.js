@@ -1,35 +1,35 @@
-import FirstBookPage from "components/Book/BookPages/FirstBookPage";
-import BookSVG from "components/SVG/book";
+import FirstBookPage from 'components/Book/BookPages/FirstBookPage'
+import BookSVG from 'components/SVG/book'
 import styles from './Book.module.css'
-import SecondBookPage from "components/Book/BookPages/SecondBookPage";
-import SpiderManPage from "./BookPages/SpidermanPage";
-import ShreilakPage from "./BookPages/ShreilakPage";
-import FrozenPage from "./BookPages/FrozenPage";
-import RatatouillePage from "./BookPages/RatatouillePage";
-import CaperucitaPage from "./BookPages/CaperucitaPage";
-import BlancanievesPage from "./BookPages/BlancanievesPage";
-import MoiPage from "./BookPages/MoiPage";
+import SecondBookPage from 'components/Book/BookPages/SecondBookPage'
+import SpiderManPage from './BookPages/SpidermanPage'
+import ShreilakPage from './BookPages/ShreilakPage'
+import FrozenPage from './BookPages/FrozenPage'
+import RatatouillePage from './BookPages/RatatouillePage'
+import CaperucitaPage from './BookPages/CaperucitaPage'
+import BlancanievesPage from './BookPages/BlancanievesPage'
+import MoiPage from './BookPages/MoiPage'
 
-export const INDEX_PAGE ={
-    FIRST_PAGE: 1,
-    SECOND_PAGE: 2,
-    SPIDERMAN_PAGE: 3,
-    FROZEN_PAGE:4,
-    RATATOUILLE_PAGE:5,
-    CAPERUCITA_PAGE:6,
-    BLANCANIEVES_PAGE:7,
-    SHREILAK_PAGE:8,
-    MOI_PAGE:9,
-  }
+export const INDEX_PAGE = {
+  FIRST_PAGE: 1,
+  SECOND_PAGE: 2,
+  SPIDERMAN_PAGE: 3,
+  FROZEN_PAGE: 4,
+  RATATOUILLE_PAGE: 5,
+  CAPERUCITA_PAGE: 6,
+  BLANCANIEVES_PAGE: 7,
+  SHREILAK_PAGE: 8,
+  MOI_PAGE: 9
+}
 
 export default function Book ({ numPage }) {
-    const page = parseInt(numPage)
-    return (
+  const page = parseInt(numPage)
+  return (
         <div className={styles.container}>
             <BookSVG className={styles.bookSvg} />
-            <div className={styles.layoutBookPages}>         
+            <div className={styles.layoutBookPages}>
                     { page === INDEX_PAGE.FIRST_PAGE && <FirstBookPage/>}
-                    { page === INDEX_PAGE.SECOND_PAGE && <SecondBookPage/>}    
+                    { page === INDEX_PAGE.SECOND_PAGE && <SecondBookPage/>}
                     { page === INDEX_PAGE.SPIDERMAN_PAGE && <SpiderManPage/>}
                     { page === INDEX_PAGE.FROZEN_PAGE && <FrozenPage/>}
                     { page === INDEX_PAGE.RATATOUILLE_PAGE && <RatatouillePage/>}
@@ -39,5 +39,5 @@ export default function Book ({ numPage }) {
                     { page === INDEX_PAGE.MOI_PAGE && <MoiPage/>}
             </div>
         </div>
-    )
+  )
 }

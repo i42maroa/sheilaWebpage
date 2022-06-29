@@ -17,8 +17,8 @@ export default function Navbar () {
                   </div>
                   <div className={styles.containerLink}>
                     <SingleWoodBar/>
-                    <Link href='/moi'><a className={styles.a}>Moi</a></Link> 
-                  </div>                     
+                    <Link href='/moi'><a className={styles.a}>Moi</a></Link>
+                  </div>
                 </div>
             </nav>
         </>

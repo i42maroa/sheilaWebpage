@@ -17,10 +17,10 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
           <>
               <div className={styles.postContainer} onClick={toggleShowMoreInfo}>
                   <header className={styles.postHeader}>
-                    <h2 className={styles.postHeaderTitle} title={id} >{mainTitle}</h2>               
+                    <h2 className={styles.postHeaderTitle} title={id} >{mainTitle}</h2>
                     <h6>
-                      <time 
-                        className={styles.postHeaderTime} 
+                      <time
+                        className={styles.postHeaderTime}
                         title={createdAtFormated}>{timeago}
                       </time>
                     </h6>
@@ -29,7 +29,7 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
                   <section className={styles.postBody}>
 
                   { mainDescription ? <p className={styles.containerSectionsText}>{mainDescription}</p> : <></>}
-                 
+
                   <div className={styles.containerSections}>
                       {section && section.map(({ title, description, src }) => (
                           <>
@@ -43,9 +43,9 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
                                     <img key={index} className={styles.src} src={text} alt="resource image" />
                                   </div>
                                 </>
-                                
+
                               ))}
-                
+
                           </>
                       ))}
                   </div>
@@ -54,17 +54,17 @@ export default function Post ({ mainTitle, mainFooter, mainDescription, section,
                               <Tag key={index}>{text}</Tag>
                         ))}
                     </div>
-                  </section>              
+                  </section>
 
                   <footer className={styles.postFooter}>
-                    
-                    <p className={styles.textFooter}>{ mainFooter && <p>{mainFooter}</p> }  </p>                
+
+                    <p className={styles.textFooter}>{ mainFooter && <p>{mainFooter}</p> }  </p>
 
                     <div className={styles.makeItContainer}>
-                       <h4 className={styles.makeItTitle}>Sheila Denamiel</h4> 
-                       <time className={styles.makeItTime} 
+                       <h4 className={styles.makeItTitle}>Sheila Denamiel</h4>
+                       <time className={styles.makeItTime}
                         title={timeago} >{createdAtFormated}</time>
-                    </div>                                    
+                    </div>
                   </footer>
 
               </div>

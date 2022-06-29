@@ -1,4 +1,3 @@
-import Navbar from 'components/Navbar'
 import Header from 'layouts/Header'
 import styles from './PageLayout.module.css'
 

@@ -3,11 +3,8 @@ import styles from 'styles/Home.module.css'
 import PageLayout from 'layouts/PageLayout'
 import Perfil from 'components/Perfil'
 import SingleWoodBar from 'components/SVG/singleWoodBar'
-import { useRouter } from 'next/dist/client/router'
 
 export default function Home () {
-  
-  
   return (
     <div className={styles.container}>
       <Head>

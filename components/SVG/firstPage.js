@@ -1,19 +1,19 @@
-import * as React from "react"
+import * as React from 'react'
 
-export default function FirstPageSVG(props){
-    return(
+export default function FirstPageSVG (props) {
+  return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1630.78 1020.18"
     style={{
-      enableBackground: "new 0 0 1630.78 1020.18",
+      enableBackground: 'new 0 0 1630.78 1020.18'
     }}
     xmlSpace="preserve"
     {...props}
   >
     <style>
       {
-        ".first_page_st1{fill:#4c3604}.first_page_st4{display:none}.first_page_st5{display:inline}.first_page_st7{fill:#d8cb95}.first_page_st8{fill:#a59d7c}.first_page_st9{fill:#f7eecb}.first_page_st10{fill:#a05c18}.first_page_st11{fill:#c95}.first_page_st12{fill:#492c21}.first_page_st17,.first_page_st18{fill:none;stroke-miterlimit:10}.first_page_st17{stroke:#338968;stroke-width:2}.first_page_st18{stroke:#a59e3e}.first_page_st19{fill:#fee095}.first_page_st20{fill:#442614}.first_page_st22{fill:#df6a4e}.first_page_st23{fill:#97b6e0}.first_page_st24{fill:#b29a6e}.first_page_st25{fill:#b85443}.first_page_st26{fill:#7694c1}.first_page_st27{fill:#6c5737}.first_page_st30{fill:none;stroke:#f5a156;stroke-linecap:round;stroke-miterlimit:10}.first_page_st32,.first_page_st33,.first_page_st35{fill:none;stroke:#020203;stroke-miterlimit:10}.first_page_st33{stroke-width:.75}.first_page_st35{stroke-linecap:round}.first_page_st36{fill:#a0b83a}.first_page_st37{fill:none;stroke:#7c93ad;stroke-width:2;stroke-miterlimit:10}.first_page_st38{fill:#a7bbcd}.first_page_st39{fill:#1f6157}.first_page_st40,.first_page_st41{fill:none;stroke:#6dbe9b;stroke-miterlimit:10}.first_page_st41{stroke-width:.75}.first_page_st42{fill:#4a2c21}.first_page_st43{fill:#311711}.first_page_st44{fill:#1e1e1c}.first_page_st45{fill:#e5c6cd}.first_page_st46{fill:#b9989f}.first_page_st47{fill:none;stroke:#1e1e1c;stroke-width:2;stroke-miterlimit:10}.first_page_st48{fill:#3c7dc0}.first_page_st49{fill:#1d69aa}.first_page_st51{fill:#d3bac1}.first_page_st52{fill:none;stroke:#1e1e1c;stroke-miterlimit:10}.first_page_st53{fill:#f8eff1}.first_page_st56{fill:none}.first_page_st57{fill:#d7edfc}.first_page_st58{fill:#f7c85a;stroke:#1e1e1c;stroke-width:3;stroke-miterlimit:10}.first_page_st59{fill:#c4dceb}.first_page_st60{fill:#030304}.first_page_st61{fill:#fff}.first_page_st62{fill:#e4e9ee}"
+        '.first_page_st1{fill:#4c3604}.first_page_st4{display:none}.first_page_st5{display:inline}.first_page_st7{fill:#d8cb95}.first_page_st8{fill:#a59d7c}.first_page_st9{fill:#f7eecb}.first_page_st10{fill:#a05c18}.first_page_st11{fill:#c95}.first_page_st12{fill:#492c21}.first_page_st17,.first_page_st18{fill:none;stroke-miterlimit:10}.first_page_st17{stroke:#338968;stroke-width:2}.first_page_st18{stroke:#a59e3e}.first_page_st19{fill:#fee095}.first_page_st20{fill:#442614}.first_page_st22{fill:#df6a4e}.first_page_st23{fill:#97b6e0}.first_page_st24{fill:#b29a6e}.first_page_st25{fill:#b85443}.first_page_st26{fill:#7694c1}.first_page_st27{fill:#6c5737}.first_page_st30{fill:none;stroke:#f5a156;stroke-linecap:round;stroke-miterlimit:10}.first_page_st32,.first_page_st33,.first_page_st35{fill:none;stroke:#020203;stroke-miterlimit:10}.first_page_st33{stroke-width:.75}.first_page_st35{stroke-linecap:round}.first_page_st36{fill:#a0b83a}.first_page_st37{fill:none;stroke:#7c93ad;stroke-width:2;stroke-miterlimit:10}.first_page_st38{fill:#a7bbcd}.first_page_st39{fill:#1f6157}.first_page_st40,.first_page_st41{fill:none;stroke:#6dbe9b;stroke-miterlimit:10}.first_page_st41{stroke-width:.75}.first_page_st42{fill:#4a2c21}.first_page_st43{fill:#311711}.first_page_st44{fill:#1e1e1c}.first_page_st45{fill:#e5c6cd}.first_page_st46{fill:#b9989f}.first_page_st47{fill:none;stroke:#1e1e1c;stroke-width:2;stroke-miterlimit:10}.first_page_st48{fill:#3c7dc0}.first_page_st49{fill:#1d69aa}.first_page_st51{fill:#d3bac1}.first_page_st52{fill:none;stroke:#1e1e1c;stroke-miterlimit:10}.first_page_st53{fill:#f8eff1}.first_page_st56{fill:none}.first_page_st57{fill:#d7edfc}.first_page_st58{fill:#f7c85a;stroke:#1e1e1c;stroke-width:3;stroke-miterlimit:10}.first_page_st59{fill:#c4dceb}.first_page_st60{fill:#030304}.first_page_st61{fill:#fff}.first_page_st62{fill:#e4e9ee}'
       }
     </style>
     <g id="book">
@@ -21,7 +21,7 @@ export default function FirstPageSVG(props){
         <path
           d="M1604.47 979.99s4.18.38 10.31-11.62l-1.68-926.06s.67-13.87-16.44-17.47c-18.67-3.92-631.09-4.83-631.09-4.83H861.2s-45.75-12.43-101.24 0L397.52 23.1 33.04 26.7s-5.2-.03-6.33 4.08-1.15 68.31-1.15 68.31l-4.92 546.34.21 327.44s1.91 12.84 12.54 16.51c10.62 3.67 370.62 2.37 370.62 2.37l352.9 2.25s52.36 11.03 108.8 0l83.19-.53 482.14-10.05 173.43-3.43z"
           style={{
-            fill: "#775602",
+            fill: '#775602'
           }}
           id="color_6_"
         />
@@ -34,14 +34,14 @@ export default function FirstPageSVG(props){
         <path
           d="M792.89 973.7s26.24-2.68 46.65-.44c0 0-24.58-5.69-23.92-9.27 0 0-21.74 11.37-22.73 9.71z"
           style={{
-            fill: "#5e4108",
+            fill: '#5e4108'
           }}
           id="sombra_debil_3_"
         />
         <path
           d="M37.5 27.74s-4.13 3.03-4.12 5.55c.01 2.52 9.41 931.41-4.12 933.25 0 0-2.3 15.15 2.75 23.85 0 0-11.66-5.53-13.62-16.87S24.11 34.5 24.11 34.5s4.2-7.88 13.39-6.76z"
           style={{
-            fill: "#a07324",
+            fill: '#a07324'
           }}
           id="luz_5_"
         />
@@ -55,7 +55,7 @@ export default function FirstPageSVG(props){
         <path
           d="m71.75 47.86-11.54.33 2.76 369.55-1.75 326.52-3.15 122-3.26 87.89 12.7 2.29 4.24-908.58 4.58-.13v-3.9h35.82l-.13-4.13c15.74-1.99 312.93-3.38 312.93-3.38 187.75-20.35 387.27 6.13 387.27 6.13 123.4-26.6 349.67-12.38 349.68-9.94.01 1.52 118.56 6.14 207.65 9.39l162.05.26-.08 3.45 40.24.18 6.61 912.02-397.39 10.3c-98.59 13.06-298.76 8.07-298.76 8.07-48.36.72-67.58-13.35-67.58-13.35-12.98 14.11-78.4 16.69-78.4 16.69L410.3 969.35l-174.02-5.6-80.07-2.58s7.53 1-37.92-.21c-24.14-.64-40.68-2.8-50.82-4.53"
           style={{
-            fill: "#e8dba6",
+            fill: '#e8dba6'
           }}
           id="color_5_"
         />
@@ -160,7 +160,7 @@ export default function FirstPageSVG(props){
         <path
           d="M974.92 101.37c-2.6 5.76-5.35 13.78-8.27 24.05l-7.95 27.78c-2.52 8.9-6.04 15.41-10.55 19.54-4.54 4.16-9.5 6.25-14.86 6.25-3.55 0-6.41-.8-8.58-2.4-2.17-1.6-3.25-3.36-3.25-5.28 0-.89.32-1.67.96-2.35.64-.68 1.37-1.01 2.19-1.01 1.21 0 2.51.73 3.89 2.19 1.88 1.96 3.36 3.2 4.43 3.73 1.49.75 2.84 1.12 4.05 1.12 1.28 0 2.38-.29 3.31-.85 1.53-.93 2.86-2.38 4-4.35 1.14-1.98 3.48-8.55 7.04-19.73 2.99-9.32 5.88-19 8.7-29.04l4.64-16.23-2.56-.11c-5.65 0-10.33 1.36-14.03 4.08-3.7 2.72-5.55 5.59-5.55 8.62 0 1.07.46 2.29 1.39 3.68.85 1.28 1.28 2.29 1.28 3.04 0 .93-.35 1.73-1.04 2.43-.69.69-1.52 1.04-2.48 1.04-1.25 0-2.27-.55-3.07-1.65s-1.2-2.72-1.2-4.84c0-3.98 1.41-7.62 4.23-10.94 2.82-3.32 6.63-5.74 11.43-7.27 3.2-1.03 8.04-1.54 14.54-1.54.93-.01 3.36.01 7.31.04z"
           style={{
-            fill: "#efe5bb",
+            fill: '#efe5bb'
           }}
         />
         <path
@@ -174,14 +174,14 @@ export default function FirstPageSVG(props){
         <path
           d="M1439.78 505.4s-15.84-23.1-27.12-151.45l-130.89-24.93s-5.56-12.31-43.7 77.27c0 0-33.09 80.06-149.32 99.1h351.03v.01z"
           style={{
-            fill: "#b6cd69",
+            fill: '#b6cd69'
           }}
           id="color_8_"
         />
         <path
           d="M1270.84 505.4s-3.26-5.5-2.1-14.54 7.75-28.72 40.61-37.8l12.89-3.04 13.2-2.12 7.46-1.77 8.37-3.41 6.1-4.85 2.86-4.49.67-3.54s-.41-8.17-9.84-14.46c-9.43-6.29-22.02-10.08-22.02-10.08l-9.52-4.21-10.1-6.08s-12.27-10.06-.72-15.5l14.28-4.68 19.33-6.73 11.19-4.81 2.9-2.02.35-.73-20.36-1.08-.58 1.82-7.68 3.4-19.64 5.13s-10.34 3.67-10.78 4.61c0 0-18.56 8.77-3.94 22.18l7.24 5.2 8.11 4.13 11.81 4.91 6.8 3.94 3.16 2.38 2.72 2.92 1.26 3.11-.49 3.55-2.04 2.82-4.75 3.74-12.9 5.3-9.41 1.07-12.22 1.58-11.77 3.39s-34.84 8.81-40.93 60.77"
           style={{
-            fill: "#ffd97d",
+            fill: '#ffd97d'
           }}
           id="camin_1_"
         />
@@ -219,7 +219,7 @@ export default function FirstPageSVG(props){
             />
             <path
               style={{
-                fill: "#8d4e20",
+                fill: '#8d4e20'
               }}
               d="m1403.69 350.36.07-11.99-5.84-.06-.06 11.79z"
             />
@@ -288,12 +288,12 @@ export default function FirstPageSVG(props){
           <path
             d="M1406.13 317.6s-.61-4.34.75-8.08c0 0 2.75-7.18 2.06-11.1l-.77.24-11.8 16.25 1.94.23.1 5.95h5.67l-.1-3.39 2.15-.1z"
             style={{
-              fill: "#5b2c25",
+              fill: '#5b2c25'
             }}
           />
           <path
             style={{
-              fill: "#20110c",
+              fill: '#20110c'
             }}
             d="m1397.65 350.36 6.29-.12-.25-11.76h-5.68z"
           />
@@ -305,11 +305,11 @@ export default function FirstPageSVG(props){
           />
           <path
             style={{
-              fill: "none",
-              stroke: "#f5a156",
+              fill: 'none',
+              stroke: '#f5a156',
               strokeWidth: 2,
-              strokeLinecap: "round",
-              strokeMiterlimit: 10,
+              strokeLinecap: 'round',
+              strokeMiterlimit: 10
             }}
             d="M1343.5 359.46v-29.08"
           />
@@ -344,10 +344,10 @@ export default function FirstPageSVG(props){
           />
           <path
             style={{
-              fill: "none",
-              stroke: "#020203",
+              fill: 'none',
+              stroke: '#020203',
               strokeWidth: 0.5,
-              strokeMiterlimit: 10,
+              strokeMiterlimit: 10
             }}
             d="M1424.23 325.8h-30.06"
           />
@@ -625,7 +625,7 @@ export default function FirstPageSVG(props){
                 <path
                   d="M1048.28 684.07s3.71-4.04.88-8.42c0 0 7.14-17.77-1.42-20.81 0 0 .81 22.42-.13 28.88-.94 6.4 0 .27 0 .27l.67.08z"
                   style={{
-                    fill: "#ccb1b7",
+                    fill: '#ccb1b7'
                   }}
                 />
               </g>
@@ -748,13 +748,13 @@ export default function FirstPageSVG(props){
               <path
                 d="m969.71 702.38 2.5 1.54s11.44 18.71 24.98 19.39c0 0 14.75 1.75 24.91-19.06l2.15-4.71-4.92 2.29s-9.96 16.7-21.75 16.43c0 0-9.42 1.21-19.59-12.46.07.01-7.61-2.61-8.28-3.42z"
                 style={{
-                  fill: "#8f3e4b",
+                  fill: '#8f3e4b'
                 }}
               />
               <path
                 d="M1025.93 698.67s-13.67 2.35-15.75 1.96c0 0-6.19.75-12.19 4.25 0 0-11.85-2.35-14.21-1.96l-1.88.33s-11.25-.33-11.85-1.08c0 0 2.29 2.56 13.94 4.58 0 0 14.81 2.56 17.31 1.08 0 0 15.29-4.44 24.71-8.96"
                 style={{
-                  fill: "#a64f63",
+                  fill: '#a64f63'
                 }}
               />
               <path
@@ -1086,7 +1086,7 @@ export default function FirstPageSVG(props){
       <path
         d="M450.18 523.89c-6.35 0-12.44-.63-18.09-1.87a91.944 91.944 0 0 1-16.43-5.22l-1.56-.66.4-1.65a56.24 56.24 0 0 0 1.45-9.29c.23-3.28.35-6.39.35-9.25v-1.58l1.54-.36c2.43-.57 4.98-.94 7.81-1.1 2.71-.16 5.31-.24 7.73-.24h1.81l.18 1.8c.45 4.49 1.18 8.04 2.17 10.56.87 2.25 2.22 3.8 4.13 4.75 2.05 1.04 4.91 1.56 8.51 1.56 4.86 0 8.31-.78 10.24-2.33 1.8-1.44 2.68-2.99 2.68-4.72 0-1.71-.81-3.1-2.55-4.36-2.11-1.55-4.87-2.98-8.23-4.28l-11.27-4.34a70.588 70.588 0 0 1-11.53-5.68c-3.7-2.27-6.81-5.15-9.26-8.57-2.54-3.54-3.82-7.96-3.82-13.14 0-3.16.47-6.05 1.41-8.59l.08-.19c.02-.04.03-.09.05-.14.06-.21.07-.23-.14-.38-1.19-.83-3.72-2.04-9.11-3.13-2.3-.47-9.28-1.9-9.86-7-.44-6.81 1.91-12.11 6.98-15.86 1.55-1.14 3.7-1.39 5.5-.63 2.08.88 3.94 2.57 5.69 5.15l1.45 2.34c1.41 2.28 2.82 4.55 4.23 6.84-.01-.02.03.03.07.08a20.75 20.75 0 0 0 2.86 3.03c2.55-1.85 5.53-3.34 8.88-4.44 5.19-1.7 11.03-2.56 17.36-2.56 3.73 0 7.46.24 11.09.71 3.68.49 7.13 1.12 10.26 1.87 2.52.6 4.61 1.28 6.33 2.05.65-.7 1.59-1.84 2.17-2.54l.56-.68c2.79-3.31 4.89-6.36 6.25-9.08.67-1.31 1.89-2.32 3.43-2.84 2.95-.96 6.11.06 7.58 2.41.68 1.08 1.35 2.33 2 3.71 1.69 3.42 2.52 6.28 2.52 8.69v.04c-.02 1.85-1.11 3.54-2.84 4.44-1.76.91-4.13 1.84-7.25 2.84-3.73 1.21-6.49 2.32-8.21 3.32l-.21.1c-2.16.94-3.16 3.11-2.96 6.46v.09c.1.82.21 1.61.35 2.33l.29 1.49-1.36.68c-1.9.95-4.41 1.63-7.45 2.01-2.93.36-5.55.54-7.79.54h-1.68l-.29-1.65c-.72-4.04-1.76-7.15-3.1-9.26-1.28-2.03-2.77-3.39-4.56-4.16-1.89-.83-4.11-1.25-6.6-1.25-3.18 0-5.81.58-7.84 1.73-1.7.97-2.5 2.32-2.5 4.25 0 2.04.89 3.66 2.79 5.1 2.21 1.66 5.15 3.21 8.71 4.6 3.81 1.48 7.8 2.98 11.87 4.44 4.32 1.57 8.44 3.48 12.24 5.67 3.95 2.27 7.24 5.14 9.79 8.51 2.65 3.5 3.99 7.88 3.99 13 0 5.14-1.57 9.74-4.65 13.68-3.04 3.88-7.55 6.92-13.39 9.04-5.68 2.06-12.84 3.11-21.25 3.11zm-31.41-10.14c4.54 1.83 9.3 3.29 14.18 4.35 5.37 1.18 11.17 1.78 17.23 1.78 7.95 0 14.65-.97 19.91-2.88 5.13-1.86 9.03-4.47 11.61-7.75 2.56-3.26 3.8-6.93 3.8-11.21 0-4.29-1.04-7.76-3.18-10.59-2.22-2.94-5.11-5.45-8.6-7.46-3.6-2.08-7.5-3.89-11.6-5.37-4.09-1.47-8.12-2.98-11.96-4.47-3.91-1.52-7.16-3.25-9.67-5.13-2.91-2.2-4.38-4.99-4.38-8.29 0-3.38 1.56-6.05 4.52-7.73 2.64-1.5 5.94-2.26 9.82-2.26 3.05 0 5.81.53 8.2 1.58 2.5 1.08 4.64 2.99 6.34 5.69 1.43 2.26 2.53 5.22 3.33 9.02 1.69-.06 3.59-.23 5.65-.48 1.89-.24 3.51-.6 4.83-1.06-.05-.37-.1-.75-.14-1.14l-.01-.22c-.3-4.96 1.56-8.62 5.25-10.27 1.99-1.14 4.9-2.32 8.89-3.61 2.87-.92 5.1-1.79 6.63-2.58.41-.22.68-.57.68-.92l2-.02h-2c0-1.76-.71-4.1-2.12-6.96-.59-1.27-1.19-2.37-1.78-3.31-.49-.78-1.78-1.12-2.87-.76-.58.19-1 .51-1.18.86-1.5 2.99-3.77 6.31-6.75 9.84l-.54.65c-2.81 3.41-3.77 4.48-5.25 4.33l-.38-.04-.34-.18c-1.6-.85-3.8-1.61-6.55-2.27-3-.72-6.31-1.32-9.85-1.79-3.45-.45-7.01-.68-10.57-.68-5.91 0-11.33.79-16.11 2.36-3.45 1.13-6.43 2.71-8.86 4.71l-1.28 1.05-1.22-1.03c-1.73-1.24-3.34-2.82-4.79-4.69l-.26-.35c-1.45-2.35-2.86-4.62-4.27-6.9l-1.41-2.28c-1.24-1.83-2.57-3.08-3.89-3.64-.5-.21-1.17-.14-1.58.17-3.96 2.92-5.72 6.94-5.37 12.28.15 1.31 2.59 2.59 6.68 3.43 4.93 1 8.4 2.23 10.59 3.77 1.62 1.12 2.26 2.92 1.69 4.81-.08.26-.15.46-.24.64-.75 2.07-1.14 4.47-1.14 7.13 0 4.32 1.03 7.96 3.08 10.81 2.14 2.98 4.86 5.5 8.1 7.49 3.37 2.08 7.03 3.88 10.87 5.36l11.27 4.34c3.69 1.43 6.77 3.03 9.15 4.78 2.78 2.02 4.19 4.57 4.19 7.59 0 2.98-1.41 5.62-4.19 7.85-2.71 2.15-6.87 3.2-12.74 3.2-4.29 0-7.65-.65-10.3-1.98-2.8-1.39-4.84-3.71-6.07-6.87-.99-2.53-1.72-5.74-2.22-9.8-1.82.03-3.73.1-5.71.22-2 .12-3.85.34-5.6.68-.04 2.49-.15 5.15-.35 7.91-.21 2.83-.6 5.61-1.17 8.29z"
         style={{
-          fill: "#543c01",
+          fill: '#543c01'
         }}
         id="border"
       />
@@ -1102,4 +1102,5 @@ export default function FirstPageSVG(props){
       </g>
     </g>
   </svg>
-)}
+  )
+}
