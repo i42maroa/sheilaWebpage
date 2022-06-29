@@ -1,0 +1,8 @@
+.postContainer{
+    width: 98%;
+    background: var(--background-page); 
+    box-shadow: var(--box-shadow);
+    border-radius: 0.2rem;
+    overflow: hidden;
+    background: linear-gradient(to bottom left, var(--white-page), var(--white-page-gradient));
+}

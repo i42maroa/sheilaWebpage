@@ -120,3 +120,28 @@
 .buttonContainer{
     width: 100%;
 }
+
+@media only screen and (max-width: 800px) {
+    .bookLineText20{
+        font-size: 20px;
+        line-height: 30px;     
+    }
+    
+    .bookLineText30{
+        font-size: 25px;
+        margin: 1.2rem 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .bookLineText20{
+        font-size: 15px;
+        line-height: 20px;     
+    }
+    
+    .bookLineText30{
+        font-size: 20px;
+        margin: 1rem 0;
+    }
+}
+  
