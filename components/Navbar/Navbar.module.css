@@ -3,20 +3,21 @@
     min-height: var(--height-navbar);
     display: flex;
     justify-content: center;
-    /* background: linear-gradient(var(--smoth-brown), var(--smoth-brown-layout)); */
-    /* box-shadow: inset 0 0.25rem 0  rgba(0, 0, 0, 0.1); */
     margin: 0.5rem 0 1rem 0;
 }
 
 .containerLink{
-    width: 300px;
-    height: 100%;
-    margin: 0 2rem;
+    width: 18rem;
+    margin: 0 auto;
     position: relative;
 }
 
 .containerNav{
     display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .containerNav > :Link{
@@ -40,8 +41,21 @@
     color: var(--green);
 }
 
+
+@media only screen and (max-width: 1000px) {
+    .containerLink{
+        width: 14rem;
+        margin: 0 0.5rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    .containerLink{
+        margin: 0 auto;
+    }
     .containerNav{
         flex-direction: column;
+       flex-wrap: nowrap;
     }
-  }
+}
+

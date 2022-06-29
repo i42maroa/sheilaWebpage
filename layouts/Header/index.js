@@ -10,8 +10,8 @@ export default function Header () {
         <>
             <div className={styles.head}>
                 <div className={styles.headTitle}>
-                   {size.width > 800 && <NavBarWood/> }
-                  {size.width <= 800 && <ShortHeader/> }   
+                    {size.width > 800 && <NavBarWood/> }
+                    {size.width <= 800 && <ShortHeader/> }   
                 </div>
                 <Navbar></Navbar>
             </div>

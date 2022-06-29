@@ -7,7 +7,7 @@ body {
   font-family: var(--font-base);
   font-size: var(--font-size);
   font-size: 18px;
-    line-height: 28px;
+  line-height: 28px;
   background: var(--white-gradient);
 }
 
@@ -31,3 +31,9 @@ p{
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 800px) {
+  body{
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
