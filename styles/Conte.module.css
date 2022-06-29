@@ -1,25 +1,19 @@
 .bookContainer{
   width: 100%;
+  height: 100%;
   position: relative;
-  background: red;
 }
 
 .bookPageContainer{
-  position: absolute;
   display: flex;
-  top: 0;
-  left: 0;
-  right: 0;
+  flex-direction: column;
   margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.containerPage{
   background: blue;
-}
-
-.bookLeftPage{
-  width: 50%;
-  background: yellow;
-}
-
-.bookRightPage{
-  width: 50%;
-  background: green;
+  width: 100%;
+  height: 100%;
 }

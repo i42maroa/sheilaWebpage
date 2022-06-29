@@ -36,3 +36,6 @@
     margin: auto;
 }
 
+.a:hover{
+    color: var(--green);
+}

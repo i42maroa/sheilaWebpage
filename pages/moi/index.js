@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import styles from 'styles/Moi.module.css'
 import UniquePageLayout from 'layouts/UniquePageLayout'
-import BookSVG from 'components/SVG/book'
-import ShreilakLetter from 'components/SVG/shreilakLetter'
-import WoodHeader from 'components/SVG/woodHeader'
+import Book, { INDEX_PAGE } from 'components/Book'
 
 export default function Moi () {
   return (
@@ -15,9 +13,8 @@ export default function Moi () {
       </Head>
 
       <UniquePageLayout>
-        <div className={styles.main_column}>
-    
-       <ShreilakLetter/>
+        <div className={styles.bookPageContainer}>
+          <Book numPage={INDEX_PAGE.MOI_PAGE}/>
         </div>
       </UniquePageLayout>
     </div>

@@ -15,11 +15,11 @@
 }
 
 .shreilakTitle{
-    width: 25%;
+    height: auto;
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
-    top: 1rem;
     bottom: 0;
     margin: auto;
 }

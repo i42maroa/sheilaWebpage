@@ -1,0 +1,11 @@
+.boxButtonContes{
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.buttonBook{
+    margin: 0 3rem;
+}

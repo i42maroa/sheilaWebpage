@@ -4,8 +4,8 @@ const ShreilakLetter = (props) => (
   <svg
     id="letras"
     xmlns="http://www.w3.org/2000/svg"
-    x={0}
-    y={0}
+    height={102}
+    width={1520}
     viewBox="0 0 517.88 117.69"
     style={{
       enablebackgroundLetter: "new 0 0 517.88 117.69",
