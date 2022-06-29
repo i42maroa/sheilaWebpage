@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import Post from 'components/Post'
 // import { fetchResourcesFirebaseDB } from 'firebase/start'
 import { fetchResourcesFirebaseDB } from 'prueba/prueba'
-import { useRouter } from 'next/dist/client/router'
+// import { useRouter } from 'next/dist/client/router'
 import UniquePageLayout from 'layouts/UniquePageLayout'
 // import { prueba } from 'firebase/client'
 
@@ -13,8 +13,8 @@ export default function Ressource () {
   // const [titleListPost, setTitleListPost] = useState('Ultimas aportaciones')
   const [resourcesLine, setResourcesLine] = useState([])
 
-  const router = useRouter()
-  const { numConte, numPage } = router.query
+  // const router = useRouter()
+  // const { numConte, numPage } = router.query
 
   useEffect(() => {
     fetchResourcesFirebaseDB().then(setResourcesLine)

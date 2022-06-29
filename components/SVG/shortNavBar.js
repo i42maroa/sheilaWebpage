@@ -1,26 +1,26 @@
-import * as React from "react"
+import * as React from 'react'
 
 export default function ShortHeader (props) {
-    return (
+  return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 636.11 190.49"
     style={{
-      enableBackground: "new 0 0 636.11 190.49",
+      enableBackground: 'new 0 0 636.11 190.49'
     }}
     xmlSpace="preserve"
     {...props}
   >
     <style>
       {
-        ".st0_shortHeader{display:none}.st1_shortHeader{display:inline}.st2_shortHeader{fill:#1d1d1b}.st4_shortHeader{display:inline;fill:none;stroke:#000;stroke-width:.1;stroke-miterlimit:10}.st6_shortHeader{fill:#fcfcfa}.st7_shortHeader,.st8_shortHeader{fill:none;stroke:#4c3604;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10}.st8_shortHeader{stroke-width:.75}.st10_shortHeader{fill:#724b27}.st12_shortHeader{fill:#543c01}.st13_shortHeader{fill:#b8dd2a}.st14_shortHeader,.st15_shortHeader{fill:none}.st15_shortHeader{stroke:#fcfcfa;stroke-linecap:round;stroke-miterlimit:10}.st16_shortHeader{fill:#7d9614}"
+        '.st0_shortHeader{display:none}.st1_shortHeader{display:inline}.st2_shortHeader{fill:#1d1d1b}.st4_shortHeader{display:inline;fill:none;stroke:#000;stroke-width:.1;stroke-miterlimit:10}.st6_shortHeader{fill:#fcfcfa}.st7_shortHeader,.st8_shortHeader{fill:none;stroke:#4c3604;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10}.st8_shortHeader{stroke-width:.75}.st10_shortHeader{fill:#724b27}.st12_shortHeader{fill:#543c01}.st13_shortHeader{fill:#b8dd2a}.st14_shortHeader,.st15_shortHeader{fill:none}.st15_shortHeader{stroke:#fcfcfa;stroke-linecap:round;stroke-miterlimit:10}.st16_shortHeader{fill:#7d9614}'
       }
     </style>
     <g id="madera">
       <path
         d="M615.18 8.98s11.32 1.65 3.64 8.95c0 0 7 4.35-4.12 12.47 0 0 8.72-.43 10.15 1.44 1.43 1.87-1.1 14.97-1.1 14.97l-3.76 14.54 1.58 9.89 4.85 9.6-2.18 14.12-5.53 1.19 5.25 4.02s1.17 2.36-2.73 7.74l2.9 1.99.42 26.77s-2.52 13.74-13.3 17.71l11.88 1.68s-.62 20.13-1.95 22.45c0 0-17.48 7.24-48.22-.67 0 0 12.71-2.1-74.3-1.34-87.01.77-94.69 2.54-94.69 2.54s1.58 1.64-67.2 1.37c0 0-62.24-5.79-73.48-3.55-11.24 2.24-109.03.78-109.03.78l-24.2 3.89L75.2 181l-58.36-1.72s-10.03-8.5-1.2-13.8c0 0-15.71-8.41 8.83-17.35l-7.89-4.84 1.44-2.32s-9.02-6.98-3.06-13.44c0 0-7.22-29.89 2.06-35.43l6.88-.53S13.35 90 12.66 76.58s1.72-14.33 1.72-14.33-2.23-18 3.59-19.26c0 0-7.97-8.15-6.47-14.68l1.02-10.9s-.2-9.73 22.04-5.49l60.54 1.03s73.49 2.64 94.01-3.1L243 8.3s51.02.09 63.35 1.23 74 4.92 83.41 3.66 19.59.97 70.16-4.16l85.88.95 69.38-1z"
         style={{
-          fill: "#775602",
+          fill: '#775602'
         }}
         id="color_madera"
       />
