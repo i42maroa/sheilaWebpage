@@ -12,7 +12,7 @@ export default function BookButton ({ children, page }) {
                         </Link>
                     </div>
 
-                    <ButtonTitleBook className={styles.svg} background={'#775602'} width={210}/>
+                    <ButtonTitleBook className={styles.svg} background={'#775602'} />
                 </div>
             </>
   )

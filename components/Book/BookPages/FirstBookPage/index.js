@@ -18,6 +18,7 @@ export default function FirstBookPage () {
                         <p className={bookStyles.bookLineText20}>
                             <img className={bookStyles.floatRight} src="../bookImages/castle.svg" height={200}/>
                             Je m&apos;appelle Shreilak, j&apos;habite dans un village très loin avec un grand château.
+
                         </p>
                     </div>
                     {/* <div className={bookStyles.layoutSingleColumn}>

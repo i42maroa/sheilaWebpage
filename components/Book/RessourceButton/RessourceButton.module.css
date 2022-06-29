@@ -3,7 +3,7 @@
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     background: var(--brown-gradient);
     border-radius: 3px;
     padding: 0.2rem;
@@ -29,4 +29,41 @@
 .text{
     font-family: var(--font-title);
     color:#fff; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .text{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) { 
+    .text{
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .container{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) { 
+    .text{
+        font-size: 10px;
+        padding: 0;
+    }
+    .container{
+        padding: 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) { 
+    .text{
+        font-size: 6px;
+    }
+
 }

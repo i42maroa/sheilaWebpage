@@ -16,12 +16,10 @@ export default function SecondBookPage () {
                             Una sorcière mèchante et envieuse a jeté un sortilège sur moir
                         </p>
                     </div>
-                    <div className={bookStyles.layoutSingleColumn}>
-                        <p className={bookStyles.bookLineText30}>Elle m&apos;a transformée en ogresse !!</p>
-                    </div>
                     <div className={bookStyles.layoutTextContainer}>
+                        <p className={bookStyles.bookLineText30}>Elle m&apos;a transformée en ogresse !!</p>
                         <p className={bookStyles.bookLineText20}>
-                            <img src="../bookImages/shreilak.svg" width={170} className={bookStyles.floatLeft}/>
+                            <img src="../bookImages/shreilak.svg" height={170} className={bookStyles.floatLeft}/>
                             Je besoin l&apos;aide de mes élèves pour retrouver mon aspect normal!
                         </p>
                     </div>
