@@ -29,7 +29,6 @@ export default function Ressource () {
       </Head>
 
       <UniquePageLayout>
-      {console.log(numConte, numPage)}
          <div className={styles.main_column}>
            {resourcesLine.map(
              ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }, index, array) => (
