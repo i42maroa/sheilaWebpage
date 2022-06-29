@@ -1,25 +1,25 @@
-import * as React from "react"
+import * as React from 'react'
 
-export default function BookSVG(props){
-    return(
+export default function BookSVG (props) {
+  return (
   <svg
     viewBox="0 0 1639.95 1016.28"
     style={{
-      enableBackground: "new 0 0 1639.95 1016.28",
+      enableBackground: 'new 0 0 1639.95 1016.28'
     }}
     xmlSpace="preserve"
     {...props}
   >
     <style>
       {
-        ".st1{fill:#4c3604}.st4{display:none}.st5{display:inline}.st7{fill:#d8cb95}.st8{fill:#a59d7c}.st9{fill:#f7eecb}.st10{fill:#a05c18}.st11{fill:#c95}"
+        '.st1{fill:#4c3604}.st4{display:none}.st5{display:inline}.st7{fill:#d8cb95}.st8{fill:#a59d7c}.st9{fill:#f7eecb}.st10{fill:#a05c18}.st11{fill:#c95}'
       }
     </style>
     <g id="marco">
       <path
         d="M1609.06 981.36s4.18.38 10.31-11.62l-1.68-926.06s.67-13.87-16.44-17.47c-18.67-3.92-631.09-4.83-631.09-4.83H865.79s-45.75-12.43-101.24 0l-362.44 3.09-364.48 3.6s-5.2-.03-6.33 4.08-1.15 68.31-1.15 68.31L25.23 646.8l.21 327.44s1.91 12.84 12.54 16.51c10.62 3.67 370.62 2.37 370.62 2.37l352.9 2.25s52.36 11.03 108.8 0l83.19-.53 482.14-10.05 173.43-3.43z"
         style={{
-          fill: "#775602",
+          fill: '#775602'
         }}
         id="color"
       />
@@ -32,14 +32,14 @@ export default function BookSVG(props){
       <path
         d="M797.48 975.07s26.24-2.68 46.65-.44c0 0-24.58-5.69-23.92-9.27 0 0-21.74 11.37-22.73 9.71z"
         style={{
-          fill: "#5e4108",
+          fill: '#5e4108'
         }}
         id="sombra_debil_1_"
       />
       <path
         d="M42.09 29.11s-4.13 3.03-4.12 5.55c.01 2.52 9.41 931.41-4.12 933.25 0 0-2.3 15.15 2.75 23.85 0 0-11.66-5.53-13.62-16.87S28.7 35.87 28.7 35.87s4.2-7.88 13.39-6.76z"
         style={{
-          fill: "#a07324",
+          fill: '#a07324'
         }}
         id="luz_1_"
       />
@@ -53,7 +53,7 @@ export default function BookSVG(props){
       <path
         d="m76.34 49.23-11.54.33 2.76 369.55-1.75 326.52-3.15 122-3.26 87.89 12.7 2.29 4.24-908.58 4.58-.13v-3.9h35.82l-.13-4.13c15.74-1.99 312.93-3.38 312.93-3.38 187.75-20.35 387.27 6.13 387.27 6.13 123.4-26.6 349.67-12.38 349.68-9.94.01 1.52 118.56 6.14 207.65 9.39l162.05.26-.08 3.45 40.24.18 6.61 912.02-397.39 10.3c-98.59 13.06-298.76 8.07-298.76 8.07-48.36.72-67.58-13.35-67.58-13.35-12.98 14.11-78.4 16.69-78.4 16.69l-325.94-10.17-174.02-5.6-80.07-2.58s7.53 1-37.92-.21c-24.14-.64-40.68-2.8-50.82-4.53"
         style={{
-          fill: "#e8dba6",
+          fill: '#e8dba6'
         }}
         id="color_1_"
       />
@@ -101,4 +101,5 @@ export default function BookSVG(props){
       </g>
     </g>
   </svg>
-    )}
+  )
+}

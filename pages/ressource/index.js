@@ -1,14 +1,10 @@
 import Head from 'next/head'
 import styles from 'styles/Ressource.module.css'
-import PageLayout from 'layouts/PageLayout'
 import { useEffect, useState } from 'react'
-import Finder from 'components/Finder'
-import Tag from 'components/Tag'
 
 import Post from 'components/Post'
 // import { fetchResourcesFirebaseDB } from 'firebase/start'
 import { fetchResourcesFirebaseDB } from 'prueba/prueba'
-import Perfil from 'components/Perfil'
 import { useRouter } from 'next/dist/client/router'
 import UniquePageLayout from 'layouts/UniquePageLayout'
 // import { prueba } from 'firebase/client'
@@ -33,8 +29,8 @@ export default function Ressource () {
       </Head>
 
       <UniquePageLayout>
-      {console.log(numConte,numPage)}
-         <div className={styles.main_column}>     
+      {console.log(numConte, numPage)}
+         <div className={styles.main_column}>
            {resourcesLine.map(
              ({ id, mainTitle, mainFooter, mainDescription, section, tags, createdAt }, index, array) => (
             <>
@@ -48,17 +44,17 @@ export default function Ressource () {
                 tags={tags}
                 createdAt={createdAt}
               />
-              { array.length !== index + 1  ? <div className={styles.postSeparator}></div> : <></>}            
+              { array.length !== index + 1 ? <div className={styles.postSeparator}></div> : <></>}
             </>
              )
            )}
          </div>
         {/* <div className={styles.secondary_column}>
           <div className={styles.secondaryColumnSection}>
-            <h3 className={styles.secondaryColumnTitle}>¿Quién soy?</h3>          
+            <h3 className={styles.secondaryColumnTitle}>¿Quién soy?</h3>
             <Perfil></Perfil>
           </div>
-                 
+
           <div className={styles.secondaryColumnSection}>
             <h3 className={styles.secondaryColumnTitle}>Último post</h3>
             <lu className={styles.luTheme}>
@@ -81,7 +77,7 @@ export default function Ressource () {
               <div className={styles.tag}><Tag>Cuentos</Tag></div>
               <div className={styles.tag}><Tag> Jeje</Tag></div>
               <div className={styles.tag}><Tag>Hola</Tag></div>
-              <div className={styles.tag}><Tag> Buenas</Tag></div>          
+              <div className={styles.tag}><Tag> Buenas</Tag></div>
             </div>
           </div>
         </div> */}

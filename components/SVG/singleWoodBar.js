@@ -1,7 +1,7 @@
-import * as React from "react"
+import * as React from 'react'
 
 export default function SingleWoodBar (props) {
-    return(
+  return (
 <svg
     id="madera_navbar"
     xmlns="http://www.w3.org/2000/svg"
@@ -9,16 +9,16 @@ export default function SingleWoodBar (props) {
     y={0}
     viewBox="0 0 262.1 68"
     style={{
-      enableBackground: "new 0 0 262.1 68",
+      enableBackground: 'new 0 0 262.1 68'
     }}
     xmlSpace="preserve"
     {...props}
   >
-    <style>{".borderColor{fill:#4b3815}"}</style>
+    <style>{'.borderColor{fill:#4b3815}'}</style>
     <path
       d="M22.3 42.6s-7.1-.1-7.6-13.4 2.2-16.4 2.2-16.4l3.8-2 42 1.3s38.8.5 39.5-.2 58.2-1 58.2-1l34.7.8 42.8-1 9.8.3s3.9 2 3.2 6.7c0 0 5.2 8.7-2.6 12.2l-.4 1.6s6 .9 1 9l1.2 2.2-1.5 14.3-1.7 1.8s-15.6 4.2-35.3-1.5c0 0-18.4-1.8-20.1-1-1.7.8-59.7.2-59.7.2s-14.8.3-24.6 3.7l-42-.4L18 58.3s-4.5-4.1-2.4-9.3c-.2 0-.4-6.4 6.7-6.4z"
       style={{
-        fill: "#775713",
+        fill: '#775713'
       }}
       id="background"
     />
@@ -46,5 +46,5 @@ export default function SingleWoodBar (props) {
       />
     </g>
   </svg>
-)  }
-
+  )
+}

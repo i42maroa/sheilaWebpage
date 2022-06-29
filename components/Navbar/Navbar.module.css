@@ -39,3 +39,9 @@
 .a:hover{
     color: var(--green);
 }
+
+@media only screen and (max-width: 600px) {
+    .containerNav{
+        flex-direction: column;
+    }
+  }

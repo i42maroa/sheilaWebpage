@@ -5,12 +5,11 @@ import Book from 'components/Book'
 import { useRouter } from 'next/dist/client/router'
 
 export default function Conte () {
-
   const router = useRouter()
   const { numConte } = router.query
 
   const checkCorrectNumConte = (conte) => {
-    return conte < 9 && conte > 0 ? conte : 0;
+    return conte < 9 && conte > 0 ? conte : 0
   }
 
   return (
@@ -21,7 +20,7 @@ export default function Conte () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <UniquePageLayout >   
+      <UniquePageLayout >
         <div className={styles.bookPageContainer}>
           {numConte && <Book numPage={checkCorrectNumConte(numConte)}/>}
         </div>

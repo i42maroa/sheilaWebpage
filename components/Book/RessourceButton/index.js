@@ -2,7 +2,7 @@ import styles from './RessourceButton.module.css'
 import Link from 'next/link'
 
 export default function RessourceButton ({ conteNum, page }) {
-    return (
+  return (
             <>
                 <div className={styles.container} >
                     <div className={styles.testButton}>
@@ -12,5 +12,5 @@ export default function RessourceButton ({ conteNum, page }) {
                     </div>
                 </div>
             </>
-    )
-  }
+  )
+}
