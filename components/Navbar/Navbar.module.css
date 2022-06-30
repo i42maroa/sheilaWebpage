@@ -41,6 +41,10 @@
     color: var(--green);
 }
 
+.select{
+    color: var(--green);
+}
+
 
 @media only screen and (max-width: 1000px) {
     .containerLink{
