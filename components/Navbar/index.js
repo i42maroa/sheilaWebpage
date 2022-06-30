@@ -8,9 +8,9 @@ export default function Navbar () {
   const pathName = router.pathname
 
   const PATH_ROUTES = {
-    CONTE: "/conte/[numConte]",
-    RESSOURCE: "/ressource",
-    MOI:'/'
+    CONTE: '/conte/[numConte]',
+    RESSOURCE: '/ressource',
+    MOI: '/'
   }
 
   return (
