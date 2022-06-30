@@ -1,5 +1,6 @@
 .postContainer{
-    width: 98%;
+    width: 90%;
+    margin: 0 auto;
     background: var(--background-page); 
     box-shadow: var(--box-shadow);
     border-radius: 0.2rem;
@@ -18,14 +19,12 @@
     text-align: justify;
 }
 
-.postHeader{
-    width: 100%;   
+.postHeader{ 
     display: flex;
     justify-items: center;
-    /* border-bottom: var(--secondary) solid 1px; */
     position: relative;
     padding: 2rem;
-    
+   
 }
 
 .postHeaderTitle{
@@ -36,7 +35,6 @@
 
 .postBody{
     padding: 0 1.5rem;
-    /* background: linear-gradient(to left, var(--background-page), var(--background-page-gradient)); */
 }
 
 .postHeaderTime{
@@ -53,9 +51,9 @@
 }
 
 .containerTags{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 80%;
     margin: 0.5rem auto;
 }
@@ -76,11 +74,7 @@
 .postFooter{
     display: flex;
     flex-direction: column;
-    /* border-top: var(--secondary) solid 2px; */
-    width: 100%;
-    padding: var(--padding-footer);
-     /* background: linear-gradient(var(--background-page-gradient), var(--background-page-footer));  */
-     
+    padding: var(--padding-footer);   
 }
 
 .makeItContainer{
@@ -106,4 +100,17 @@
     color: #555;
     text-align: center;
     font-size: 0.7rem;
+}
+
+@media only screen and (max-width: 500px) { 
+    .postHeader{
+        padding: 1.5rem 0.5rem 1rem 0.5rem;
+    }
+    .postBody{
+        padding: 0;
+    }
+    
+    .postFooter{
+        padding: 0.5rem;
+    }
 }
