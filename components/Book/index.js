@@ -8,6 +8,8 @@ import FrozenPage from './BookPages/FrozenPage'
 import RatatouillePage from './BookPages/RatatouillePage'
 import CaperucitaPage from './BookPages/CaperucitaPage'
 import BlancanievesPage from './BookPages/BlancanievesPage'
+import BookResponsive from './BookResponsive'
+import { useWindowSize } from '../../hooks/screenWidth'
 
 export const INDEX_PAGE = {
   FIRST_PAGE: 1,
@@ -22,11 +24,13 @@ export const INDEX_PAGE = {
 }
 
 export default function Book ({ numPage }) {
+  const size = useWindowSize()
   const page = parseInt(numPage)
   return (
         <div className={styles.container}>
-            <BookSVG className={styles.bookSvg} />
-            <div className={styles.layoutBookPages}>
+              {size.width > 800 && <BookSVG className={styles.bookSvg} /> }
+              {size.width > 800 && 
+                <div className={styles.layoutBookPages}>
                     { page === INDEX_PAGE.FIRST_PAGE && <FirstBookPage/>}
                     { page === INDEX_PAGE.SECOND_PAGE && <SecondBookPage/>}
                     { page === INDEX_PAGE.SPIDERMAN_PAGE && <SpiderManPage/>}
@@ -34,8 +38,10 @@ export default function Book ({ numPage }) {
                     { page === INDEX_PAGE.RATATOUILLE_PAGE && <RatatouillePage/>}
                     { page === INDEX_PAGE.CAPERUCITA_PAGE && <CaperucitaPage/>}
                     { page === INDEX_PAGE.BLANCANIEVES_PAGE && <BlancanievesPage/>}
-                    { page === INDEX_PAGE.SHREILAK_PAGE && <ShreilakPage/>}
-            </div>
+                    { page === INDEX_PAGE.SHREILAK_PAGE && <ShreilakPage/>}       
+                </div> 
+              }
+            {size.width <= 800 && <BookResponsive /> }
         </div>
   )
 }

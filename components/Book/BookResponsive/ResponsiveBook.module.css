@@ -1,0 +1,4 @@
+.containerPages{
+    display: flex;
+    flex-direction: column;
+}
