@@ -218,14 +218,16 @@
         position: relative;
         margin: 2rem auto 0 auto;
     }
-}
 
-@media only screen and (max-width: 700px) { 
+    .containerImage{
+        display: flex;
+        width: 100%;
+    }
 
-}
-
-@media only screen and (max-width: 600px) { 
-
+    .floatLeft,
+    .floatRight{
+        height: 24vh;
+    }
 }
 
 @media only screen and (max-width: 500px) { 
@@ -248,19 +250,8 @@
         flex-direction: column;
     }
 
-    .containerImage{
-        display: flex;
-        width: 100%;
+    .floatLeft,
+    .floatRight{
+        height: 18vh;
     }
 }
-
-@media only screen and (max-width: 450px) { 
-
-   
-}
-
-@media only screen and (max-width: 400px) { 
-
-  
-}
-  

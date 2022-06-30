@@ -1,4 +1,4 @@
-import MoiButton from 'components/Book/MoiButton'
+import MoiButton from 'components/MoiCard/Button'
 import Pages from 'components/Book/Pages'
 import bookStyles from '../../Book.module.css'
 

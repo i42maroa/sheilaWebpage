@@ -1,8 +1,53 @@
 .postContainer{
-    width: 98%;
+    width: 90%;
     background: var(--background-page); 
     box-shadow: var(--box-shadow);
     border-radius: 0.2rem;
     overflow: hidden;
     background: linear-gradient(to bottom left, var(--white-page), var(--white-page-gradient));
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.imageContainer{
+   width: 100%;
+   display: flex;
+}
+
+.image{
+    margin: 0 auto 1rem auto;
+    width: 30rem;
+}
+
+.textContainer{
+    margin: 2rem;
+}
+
+.text{
+    font-family: Monotype Corsiva;
+    color:var(--brown-gradient);
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    margin: 2rem 0 1rem 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .postContainer{
+        width: 90;
+    }
+
+    .imageContainer{
+        float: none;
+    }
+
+    .image{
+        margin: 1rem auto;
+        width: 15rem;
+    }
 }
