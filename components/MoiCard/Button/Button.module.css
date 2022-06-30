@@ -3,10 +3,10 @@
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    margin: 0.5rem 0;
     background: var(--brown-gradient);
     border-radius: 3px;
     padding: 0.2rem;
+    margin: 0 auto;
 }
 
 .container:hover{

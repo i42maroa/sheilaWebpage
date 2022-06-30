@@ -48,38 +48,7 @@ export default function Ressource () {
              )
            )}
          </div>
-        {/* <div className={styles.secondary_column}>
-          <div className={styles.secondaryColumnSection}>
-            <h3 className={styles.secondaryColumnTitle}>¿Quién soy?</h3>
-            <Perfil></Perfil>
-          </div>
 
-          <div className={styles.secondaryColumnSection}>
-            <h3 className={styles.secondaryColumnTitle}>Último post</h3>
-            <lu className={styles.luTheme}>
-              <li className={styles.liTheme}><h5>À L'Aéroport</h5></li>
-            </lu>
-          </div>
-
-          <div className={styles.secondaryColumnSection}>
-            <h3 className={styles.secondaryColumnTitle}>Más vistos</h3>
-            <lu className={styles.luTheme}>
-              <li className={styles.liTheme}><h5>À L'Aéroport</h5></li>
-              <li className={styles.liTheme}><h5>Vive Noël !</h5></li>
-              <li className={styles.liTheme}><h5>Le potager de mon école II</h5></li>
-            </lu>
-          </div>
-
-          <div className={styles.secondaryColumnSection}>
-            <h3 className={styles.secondaryColumnTitle}>Por temas</h3>
-            <div className={styles.tagContainer}>
-              <div className={styles.tag}><Tag>Cuentos</Tag></div>
-              <div className={styles.tag}><Tag> Jeje</Tag></div>
-              <div className={styles.tag}><Tag>Hola</Tag></div>
-              <div className={styles.tag}><Tag> Buenas</Tag></div>
-            </div>
-          </div>
-        </div> */}
       </UniquePageLayout>
 
     </div>

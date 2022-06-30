@@ -174,153 +174,84 @@
 
 @media only screen and (max-width: 800px) {
 
+    .bookPage{
+        width: 90%;
+        min-height: 100vh;
+        margin: 1rem auto;
+        padding-top: 1rem;
+        background: var(--background-page); 
+        box-shadow: var(--box-shadow);
+        border-radius: 0.2rem;
+        overflow: hidden;
+        background: linear-gradient(to bottom left, var(--white-page), var(--white-page-gradient));
+    }
+
+    .imageResponsive{
+        margin: 1rem auto;
+        float: none;
+    }
+    
+    .layoutSingleColumn{
+        padding: 0;
+    }
+
     .layoutTextContainer{
-        padding: 0 0.3rem;
+        padding: 1rem 0.5rem;
+        min-height: 80vh;
     }
 
     .layoutButtonPage{
         display: none;
     }
 
-    .layoutLeftPage{
-        margin: 1rem 1rem 0rem 3.1rem;
-    }
-    
-    .layoutRightPage{ 
-        margin: 1rem 3rem 0rem 0.8rem;
-    }
-
-    .bookLineText20{
-        font-size: 20px;
-        line-height: 30px;     
-    }
-    
-    .bookLineText30{
-        font-size: 24px;
-        margin: 0.8rem 0;
+    .layoutLeftPage,
+    .layoutRightPage{
+        margin: 2rem 3rem;
     }
 
     .floatLeft,
     .floatRight{
-        height: 12vh;
-    }
-}
-
-@media only screen and (max-width: 700px) { 
-
-    .layoutTextContainer{
-        padding: 0 0.3rem;
+        height: 30vh;
     }
 
-    .bookLineText20{
-        font-size: 18px;
-        line-height: 25px;   
-    }
-    
-    .bookLineText30{
-        font-size: 22px;
-        margin: 0.5rem 0;
+    .layoutButton{
+        position: relative;
+        margin: 2rem auto 0 auto;
     }
 
-}
-
-@media only screen and (max-width: 600px) { 
-
-    .layoutTextContainer{
-        padding: 0 0.2rem;
+    .containerImage{
+        display: flex;
+        width: 100%;
     }
 
-    .bookLineText20{
-        font-size: 16px;
-        line-height: 22px;   
+    .floatLeft,
+    .floatRight{
+        height: 24vh;
     }
-    
-    .bookLineText30{
-        font-size: 18px;
-        margin: 0.3rem 0;
-    }
-
 }
 
 @media only screen and (max-width: 500px) { 
 
-    .layoutTextContainer{
-        padding: 0 0.3rem;
+    .bookPage{
+        width: 95%;
     }
 
-    .layoutLeftPage{
-        margin: 0.6rem 0.5rem 0rem 2rem;
-    }
-    
-    .layoutRightPage{ 
-        margin: 0.6rem 2rem 0rem 0.5rem;
-    }
-
-    .bookLineText20{
-        font-size: 14px;
-        line-height: 20px;     
-    }
-    
-    .bookLineText30{
-        font-size: 16px;
-        margin: 0.2rem 0;
+    .layoutLeftPage,
+    .layoutRightPage{
+        margin: 1rem 2rem;
     }
 
     .floatLeft,
     .floatRight{
-        height: 10vh;
-    }
-}
-
-@media only screen and (max-width: 450px) { 
-
-    .layoutTextContainer{
-        padding: 0 0.2rem;
+        height: 25vh;
     }
 
-    .bookLineText20{
-        font-size: 13px;
-        line-height: 16px;     
-    }
-    
-    .bookLineText30{
-        font-size: 15px;
-        margin: 0.1rem 0;
+    .boxButtonContes{
+        flex-direction: column;
     }
 
     .floatLeft,
     .floatRight{
-        height: 8vh;
+        height: 18vh;
     }
 }
-
-@media only screen and (max-width: 400px) { 
-
-    .layoutTextContainer{
-        padding: 0 0.2rem;
-    }
-
-    .layoutLeftPage{
-        margin: 0.6rem 0.5rem 0rem 1.5rem;
-    }
-    
-    .layoutRightPage{ 
-        margin: 0.6rem 1.5rem 0rem 0.5rem;
-    }
-
-    .bookLineText20{
-        font-size: 12px;
-        line-height: 15px;     
-    }
-    
-    .bookLineText30{
-        font-size: 14px;
-        margin: 0.1rem 0;
-    }
-
-    .floatLeft,
-    .floatRight{
-        height: 7vh;
-    }
-}
-  

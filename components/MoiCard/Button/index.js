@@ -1,4 +1,4 @@
-import styles from '../RessourceButton/RessourceButton.module.css'
+import styles from './Button.module.css'
 import Link from 'next/link'
 
 export default function MoiButton () {

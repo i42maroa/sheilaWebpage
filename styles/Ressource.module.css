@@ -68,3 +68,9 @@
 .tag{
   margin: 0.3rem 0.5rem;
 }
+
+@media only screen and (max-width: 500px) { 
+  .postSeparator{
+    height: 2rem;
+  }
+}

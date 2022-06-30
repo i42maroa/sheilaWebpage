@@ -17,9 +17,9 @@ export default function CaperucitaPage () {
                             Elle a demandé de l&apos;aide à un homme, et il était le loup déguisé en humain.
                             Maintenant, Petit Chaperon Rouge est kidnappé, pour savoir où elle est et pouvoir ainsi la délivrer, nous devons travailller l&apos;orientation et la ville.
                         </p>
-                        <div className={bookStyles.layoutButton}>
-                            <RessourceButton className={bookStyles.buttonContainer} conteNum={INDEX_PAGE.CAPERUCITA_PAGE} page={1}/>
-                        </div>
+                    </div>
+                    <div className={bookStyles.layoutButton}>
+                        <RessourceButton className={bookStyles.buttonContainer} conteNum={INDEX_PAGE.CAPERUCITA_PAGE} page={1}/>
                     </div>
                 </>
             }
@@ -34,9 +34,9 @@ export default function CaperucitaPage () {
                             Nous allons aider grand-mère à faire une blague au Petit Chaperon Rougue, puisque nous sommes dans le 1º avril.
                             Mamie dit que sa main fait mal, puis la jambe, puis un doigt... et tout le corps !
                         </p>
-                        <div className={bookStyles.layoutButton}>
-                            <RessourceButton className={bookStyles.buttonContainer} conteNum={INDEX_PAGE.CAPERUCITA_PAGE} page={2}/>
-                        </div>
+                    </div>
+                    <div className={bookStyles.layoutButton}>
+                        <RessourceButton className={bookStyles.buttonContainer} conteNum={INDEX_PAGE.CAPERUCITA_PAGE} page={2}/>
                     </div>
                 </>
             }
