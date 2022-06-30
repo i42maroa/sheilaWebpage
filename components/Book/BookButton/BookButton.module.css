@@ -1,6 +1,6 @@
 
 .container{
-    width: 14vw;
+    width: 9rem;
     position: relative;
     height: fit-content;
     cursor: pointer;
@@ -26,11 +26,18 @@
     color:var(--green);
 }
 
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 8rem;
+    }
+}
+
 
 @media only screen and (max-width: 1000px) {
     .container{
-        width: 17vw;
+        width: 7rem;
     }
+
     .text{
         font-size: 16px;
     }
@@ -38,7 +45,19 @@
 
 @media only screen and (max-width: 800px) {
     .container{
-        width: 35vw;
+        width: 17rem;
+    }
+    .container{
+        margin: 0.4rem 0;
+    }
+    .text{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        width: 11rem;
     }
     .container{
         margin: 0.4rem 0;
@@ -48,14 +67,14 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
     .container{
-        width: 45vw;
+        width: 9rem;
     }
     .container{
         margin: 0.4rem 0;
     }
     .text{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
