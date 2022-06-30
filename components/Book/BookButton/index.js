@@ -4,7 +4,7 @@ import styles from './BookButton.module.css'
 import { useWindowSize } from 'hooks/screenWidth'
 
 export default function BookButton ({ children, page }) {
-    const size = useWindowSize()
+  const size = useWindowSize()
   return (
             <>
                 <div className={styles.container} >

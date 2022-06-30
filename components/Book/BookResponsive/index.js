@@ -8,9 +8,8 @@ import ShreilakPage from '../BookPages/ShreilakPage'
 import SpiderManPage from '../BookPages/SpidermanPage'
 import styles from './ResponsiveBook.module.css'
 
-
 export default function BookResponsive () {
-    return (
+  return (
             <>
                 <div className={styles.containerPages}>
                     <section id="section_1"><FirstBookPage/></section>
@@ -20,7 +19,7 @@ export default function BookResponsive () {
                     <section id="section_5"><RatatouillePage/></section>
                     <section id="section_6"><CaperucitaPage/></section>
                     <section id="section_7"><BlancanievesPage/></section>
-                    <section id="section_8"><ShreilakPage/></section>             
+                    <section id="section_8"><ShreilakPage/></section>
                 </div>
             </>
   )

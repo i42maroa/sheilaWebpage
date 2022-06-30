@@ -29,7 +29,7 @@ export default function Book ({ numPage }) {
   return (
         <div className={styles.container}>
               {size.width > 800 && <BookSVG className={styles.bookSvg} /> }
-              {size.width > 800 && 
+              {size.width > 800 &&
                 <div className={styles.layoutBookPages}>
                     { page === INDEX_PAGE.FIRST_PAGE && <FirstBookPage/>}
                     { page === INDEX_PAGE.SECOND_PAGE && <SecondBookPage/>}
@@ -38,8 +38,8 @@ export default function Book ({ numPage }) {
                     { page === INDEX_PAGE.RATATOUILLE_PAGE && <RatatouillePage/>}
                     { page === INDEX_PAGE.CAPERUCITA_PAGE && <CaperucitaPage/>}
                     { page === INDEX_PAGE.BLANCANIEVES_PAGE && <BlancanievesPage/>}
-                    { page === INDEX_PAGE.SHREILAK_PAGE && <ShreilakPage/>}       
-                </div> 
+                    { page === INDEX_PAGE.SHREILAK_PAGE && <ShreilakPage/>}
+                </div>
               }
             {size.width <= 800 && <BookResponsive /> }
         </div>

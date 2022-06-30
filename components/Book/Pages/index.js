@@ -3,7 +3,7 @@ import BackButton from '../BackButton'
 import bookStyles from '../Book.module.css'
 import NextButton from '../NextButton'
 
-export default function Pages ({showLeft=true, showRight=true,  leftPage, rightPage, backButton, nextButton }) {
+export default function Pages ({ showLeft = true, showRight = true, leftPage, rightPage, backButton, nextButton }) {
   return (
         <>
             {showLeft && <div className={bookStyles.bookPage}>
